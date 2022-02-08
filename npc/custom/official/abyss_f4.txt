@@ -1,0 +1,10 @@
+//==================================================
+// abyss_04 - Abyss Lake Underground Cave 4th Floor
+//==================================================
+abyss_04,0,0	monster	Purple Ferus	20612,25,5000
+abyss_04,0,0	monster	Treasure Mimic	20613,15,5000
+abyss_04,0,0	monster	Black Acidus	20614,35,5000
+abyss_04,0,0	monster	Silver Acidus	20615,35,5000
+abyss_04,0,0	monster	Bone Ferus	20616,50,5000
+abyss_04,0,0	monster	Bone Acidus	20617,50,5000
+abyss_04,0,0	boss_monster	Bone Detaderderous	20618,1,3600000, 1800000

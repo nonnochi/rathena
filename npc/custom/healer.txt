@@ -16,7 +16,7 @@
 -	script	Healer	-1,{
 
 	.@Price = 0;	// Zeny required for heal
-	.@Buffs = 0;	// Also buff players? (1: yes / 0: no)
+	.@Buffs = 1;	// Also buff players? (1: yes / 0: no)
 	.@Delay = 0;	// Heal delay, in seconds
 
 	if (@HD > gettimetick(2))
@@ -36,6 +36,12 @@
 		sc_start SC_INCREASEAGI,240000,10;
 		specialeffect2 EF_BLESSING;
 		sc_start SC_BLESSING,240000,10;
+		specialeffect2 EF_IMPOSITIO;
+		sc_start SC_IMPOSITIO,240000,5;		
+		specialeffect2 EF_ODINS_POWER;
+		sc_start SC_ODINS_POWER,60000,2;
+		specialeffect2 AB_EXPIATIO;
+		sc_start SC_EXPIATIO,270000,5;		
 	}
 	if (.@Delay)
 		@HD = gettimetick(2) + .@Delay;
@@ -84,3 +90,4 @@ ecl_in01,45,60,4	duplicate(Healer)	Healer#ecl	909
 malangdo,132,114,6	duplicate(Healer)	Healer#mal	909
 malaya,227,204,6	duplicate(Healer)	Healer#ma	909
 mora,55,152,4	duplicate(Healer)	Healer#mora	909
+prontera,230,71,5	duplicate(Healer)	Healer#tra	909
