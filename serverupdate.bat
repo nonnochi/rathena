@@ -2,5 +2,5 @@
 ECHO Getting the latest Git from the upstream
 Echo Wait...
 git pull upstream master
-Echo
+Echo ---------------------------------------------------
 Set /p Wait="Finished."
