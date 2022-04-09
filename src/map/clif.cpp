@@ -22328,6 +22328,9 @@ void clif_parse_refineui_refine( int fd, struct map_session_data* sd ){
 		return;
 	}
 
+	char message[128];
+	char player_name[NAME_LENGTH];
+
 	// Try to refine the item
 	if( cost->chance >= ( rnd() % 10000 ) ){
 		log_pick_pc( sd, LOG_TYPE_OTHER, -1, item );
@@ -22340,8 +22343,20 @@ void clif_parse_refineui_refine( int fd, struct map_session_data* sd ){
 			achievement_update_objective( sd, AG_ENCHANT_SUCCESS, 2, id->weapon_level, item->refine );
 		}
 		clif_refineui_info( sd, index );
+	// Announce First for Success
+	if (item->refine >= 12) {
+		memcpy(player_name, sd->status.name, NAME_LENGTH);
+		sprintf(message, msg_txt(NULL, 1540), player_name, item->refine, id->ename.c_str());
+		intif_broadcast(message, strlen(message) + 1, BC_DEFAULT);
+		}
 	}else{
 		// Failure
+		// Announce First for failure
+		if (item->refine >= 12) {
+			memcpy(player_name, sd->status.name, NAME_LENGTH);
+			sprintf(message, msg_txt(NULL, 1541), player_name, item->refine, id->ename.c_str());
+			intif_broadcast(message, strlen(message) + 1, BC_DEFAULT);
+		}
 
 		// Blacksmith blessings were used to prevent breaking and downgrading
 		if( blacksmith_amount > 0 ){
