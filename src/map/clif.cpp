@@ -22344,7 +22344,7 @@ void clif_parse_refineui_refine( int fd, struct map_session_data* sd ){
 		}
 		clif_refineui_info( sd, index );
 	// Announce First for Success
-	if (item->refine >= 12) {
+	if (item->refine >= battle_config.announce_refine_success) {
 		memcpy(player_name, sd->status.name, NAME_LENGTH);
 		sprintf(message, msg_txt(NULL, 1540), player_name, item->refine, id->ename.c_str());
 		intif_broadcast(message, strlen(message) + 1, BC_DEFAULT);
@@ -22352,7 +22352,7 @@ void clif_parse_refineui_refine( int fd, struct map_session_data* sd ){
 	}else{
 		// Failure
 		// Announce First for failure
-		if (item->refine >= 12) {
+		if (item->refine >= battle_config.announce_refine_failure) {
 			memcpy(player_name, sd->status.name, NAME_LENGTH);
 			sprintf(message, msg_txt(NULL, 1541), player_name, item->refine, id->ename.c_str());
 			intif_broadcast(message, strlen(message) + 1, BC_DEFAULT);

@@ -12,3 +12,5 @@
  *	 <datatype> name;
  **/
 
+	int announce_refine_success;
+	int announce_refine_failure;
