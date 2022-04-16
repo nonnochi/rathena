@@ -455,7 +455,7 @@ uint64 ItemDatabase::parseBodyNode(const ryml::NodeRef& node) {
 				return 0;
 
 			if (active) {
-				if (constant & EQP_SHADOW_GEAR && item->type != IT_SHADOWGEAR) {
+				if (constant & EQP_SHADOW_GEAR && item->type != IT_SHADOWGEAR && item->type != IT_CARD) {
 					this->invalidWarning(node, "Invalid item equip location %s as it's not a Shadow Gear item type, defaulting to IT_ETC.\n", equipName.c_str());
 					item->type = IT_ETC;
 				}
