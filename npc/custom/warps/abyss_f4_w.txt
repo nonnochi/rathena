@@ -1,0 +1,31 @@
+abyss_03,91,110,2	script	Sign Board#warp	835,{
+    if(BaseLevel < 190) {
+	    mes "You are not strong enough for the next area. You need at least Base Level 190!";
+        close;
+	    end;
+    }
+	mes "The sign stands in front the small hole reads as follow.",
+	"- I have made a shortcut because I am tired of turning around, but it is so high and deep I don't recommend it to others. -",
+	"^0000FFLevel 190 and above.^FFFFFF";
+	next;
+		if(select("I'm going too!:I must be careful not to fall.") == 2){
+			mes "You were afraid of falling and decided to come back.";
+			close;
+		}
+	mes "You decide to climb down the rope through the small hole.";
+	sleep2 750;
+	warp "abyss_04",167,160;
+end;
+}
+abyss_04,168,165,2	script	Worn Rope#warp	111,{
+	mes "You see the same rope you came.",
+		"What will you do?";
+	next;
+		if(select("Climb up.:I'll stay here a little more.") == 2){
+			end;
+		}
+	mes "You decide to climb up the rope.";
+	sleep2 750;
+	warp "abyss_03",97,108;
+end;
+}

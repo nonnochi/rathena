@@ -1,0 +1,24 @@
+ein_dun02,17,250,0	script	ein02-03	45,1,1,{
+
+OnTouch_:
+if(BaseLevel < 180) {
+	dispbottom "System: You are not strong enough for the next area. You need at least Base Level 180!";
+	end;
+}
+warp "ein_dun03",268,277;
+end;
+}
+ein_dun03,268,281,0	warp	ein_dun02	1,1,ein_dun02,22,250
+
+//==================================================
+// ein_dun03 - Mine Dungeon
+//==================================================
+ein_dun03,0,0	monster	Green Mineral	20594,30,5000
+ein_dun03,0,0	monster	Red Obsidian	20595,30,5000
+ein_dun03,0,0	monster	White Mineral	20596,30,5000
+ein_dun03,0,0	monster	Purple Mineral	20597,30,5000
+ein_dun03,0,0	monster	Jewelry Ant	20598,30,5000
+ein_dun03,0,0	monster	Jewel	20600,20,5000
+ein_dun03,0,0	monster	White Porcellio	20602,40,5000
+ein_dun03,0,0	monster	Abyssman	20603,40,5000
+ein_dun03,0,0,0,0	boss_monster	Jungoliant	20601,1,7500000,600000,0
