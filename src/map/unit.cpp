@@ -87,6 +87,12 @@ int unit_walktoxy_sub(struct block_list *bl)
 
 	walkpath_data wpd = { 0 };
 
+	if(status_isdead(bl))
+		return 0;
+	
+	ud = unit_bl2ud(bl);
+	if(ud == NULL) return 0;
+
 	if( !path_search(&wpd,bl->m,bl->x,bl->y,ud->to_x,ud->to_y,ud->state.walk_easy,CELL_CHKNOPASS) )
 		return 0;
 
