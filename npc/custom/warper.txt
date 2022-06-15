@@ -294,7 +294,7 @@ menu	"Abyss Lakes",D1, "Amatsu Dungeon",D2, "Anthell",D3,
     	"Thor Volcano",D38, "Toy Factory",D39, "Turtle Dungeon",D40, "Umbala Dungeon",D41;
 
 D1: setarray @c[2],261,272,275,270,116,27;
-	Disp("Abyss Lakes",1,3); Pick("abyss_");
+	Disp("Abyss Lakes",1,4); Pick("abyss_");
 D2: setarray @c[2],228,11,34,41,119,14;
 	Disp("Amatsu Dungeon",1,3); Pick("ama_dun");
 D3: setarray @c[2],35,262,168,170;
@@ -349,8 +349,8 @@ D23: Restrict("RE");
 	 Disp("Lasagna Dungeon",1,3); Pick("lasa_dun");
 D24: setarray @c[2],218,196,282,20,165,38;
 	 Disp("The Royal Tomb:Inside the Royal Tomb:Suei Long Gon"); Pick("lou_dun");
-D25: setarray @c[2],126,68,47,30;
-	 Disp("Magma Dungeon",1,2); Pick("mag_dun");
+D25: setarray @c[2],126,68,47,30,47,34;
+	 Disp("Magma Dungeon",1,3); Pick("mag_dun");
 D26: Restrict("RE");
 	 setarray @c[2],33,230;
 	 Disp("Malangdo Dungeon",1,1); Pick("mal_dun");
