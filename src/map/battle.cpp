@@ -1409,8 +1409,9 @@ bool battle_status_block_damage(struct block_list *src, struct block_list *targe
 
 	//TODO: What's causing this status?
 	if (sc->data[SC_HANDICAPSTATE_HOLYFLAME] && flag&BF_MAGIC)	{ 
-			clif_skill_nodamage(0, target, AL_HEAL,damage/2, 1);
-			status_heal(target,(int)cap_value(damage/2, INT_MIN, INT_MAX),0,0,0);
+		int heal = (int)cap_value(damage/2, INT_MIN, INT_MAX);
+		clif_skill_nodamage(0, target, AL_HEAL,heal, 1);
+		status_heal(target,heal,0,0,0);
 	}
 	
 	return true;
@@ -1845,7 +1846,7 @@ int64 battle_calc_damage(struct block_list *src,struct block_list *bl,struct Dam
 			}
 		}
 
-		if (sc->data[SC_POISONINGWEAPON] && flag&BF_SHORT && (skill_id == 0 || skill_id == GC_VENOMPRESSURE) && damage > 0) {
+		if (sc->data[SC_POISONINGWEAPON] && flag&BF_SHORT && damage > 0) {
 			damage += damage * 10 / 100;
 			if (rnd() % 100 < sc->data[SC_POISONINGWEAPON]->val3)
 				sc_start4(src, bl, (sc_type)sc->data[SC_POISONINGWEAPON]->val2, 100, sc->data[SC_POISONINGWEAPON]->val1, 0, 1, 0, (sc->data[SC_POISONINGWEAPON]->val2 == SC_VENOMBLEED ? skill_get_time2(GC_POISONINGWEAPON, 1) : skill_get_time2(GC_POISONINGWEAPON, 2)));
@@ -5989,7 +5990,7 @@ static void battle_attack_sc_bonus(struct Damage* wd, struct block_list *src, st
 			ATK_ADDRATE(wd->damage, wd->damage2, sc->data[SC_EXEEDBREAK]->val2);
 			RE_ALLATK_ADDRATE(wd, sc->data[SC_EXEEDBREAK]->val2);
 		}
-		if (sc->data[SC_PYREXIA] && sc->data[SC_PYREXIA]->val3 == 0) {
+		if (sc->data[SC_PYREXIA] && sc->data[SC_PYREXIA]->val3 == 0 && skill_id == 0) {
 			ATK_ADDRATE(wd->damage, wd->damage2, sc->data[SC_PYREXIA]->val2);
 			RE_ALLATK_ADDRATE(wd, sc->data[SC_PYREXIA]->val2);
 		}
