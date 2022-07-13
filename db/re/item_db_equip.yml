@@ -21532,7 +21532,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Water,.@val;
       bonus2 bMagicAtkEle,Ele_Holy,.@val;
   - Id: 2051
-    AegisName: Illusion_Survivor's_Staff
+    AegisName: Survival_Staff_IL
     Name: Illusion Survivor's Staff
     Type: Weapon
     SubType: 2hStaff
@@ -68561,7 +68561,7 @@ Body:
          bonus2 bAddEle,Ele_Wind,10;
       }
   - Id: 15348
-    AegisName: Illusion_Goibne_Armor
+    AegisName: Goibne_Armor_IL
     Name: Illusion Goibne Armor
     Type: Armor
     Weight: 3500
@@ -72975,7 +72975,7 @@ Body:
       if (.@r>=11)
          bonus2 bSkillCooldown,"WM_SEVERE_RAINSTORM",-2000;
   - Id: 18174
-    AegisName: Illusion_Hunter_Bow
+    AegisName: Hunter_Bow_IL
     Name: Illusion Hunter Bow
     Type: Weapon
     SubType: Bow
@@ -85371,7 +85371,7 @@ Body:
       bonus2 bSkillAtk,"LG_OVERBRAND",.@dmg;
       bonus bVariableCastrate,.@cast;
   - Id: 19344
-    AegisName: Illusion_Hot_blooded_Headband
+    AegisName: Headband_Of_Power_IL
     Name: Illusion Hot-blooded Headband
     Type: Armor
     Weight: 100
@@ -85431,7 +85431,7 @@ Body:
          bonus2 bMagicAddRace,RC_Formless,min(.@r-10,15);
       }
   - Id: 19366
-    AegisName: Illusion_Goibne_Helm
+    AegisName: Goibne_Helmet_IL
     Name: Illusion Goibne Helm
     Type: Armor
     Weight: 1000
@@ -99875,7 +99875,7 @@ Body:
       if (.@r>=10)
          bonus2 bSubEle,Ele_Water,100;
   - Id: 20923
-    AegisName: Illusion_Goibne_Spaulders
+    AegisName: Goibne_Shoulder_IL
     Name: Illusion Goibne Spaulders
     Type: Armor
     Weight: 1000
@@ -101763,7 +101763,7 @@ Body:
          bonus bUnbreakableWeapon;
       }
   - Id: 21050
-    AegisName: Illusion_Tae_Goo_Lyeon
+    AegisName: Taegoolyeon_IL
     Name: Illusion Tae Goo Lyeon
     Type: Weapon
     SubType: 2hSword
@@ -104717,7 +104717,7 @@ Body:
          bonus bUseSPrate,-5;
       }
   - Id: 22190
-    AegisName: Illusion_Boots
+    AegisName: Boots_IL
     Name: Illusion Boots
     Type: Armor
     Weight: 600
@@ -104747,7 +104747,7 @@ Body:
     Script: |
       bonus bMatk,5*getrefine();
   - Id: 22192
-    AegisName: Illusion_Goibne's_Greaves
+    AegisName: Goibne_Boots_IL
     Name: Illusion Goibne's Greaves
     Type: Armor
     Weight: 1200
@@ -121456,7 +121456,7 @@ Body:
          bonus2 bSkillAtk,"RL_D_TAIL",15 + (.@r > 11 ? 15 : 0);
       }
   - Id: 28244
-    AegisName: Illusion_Gate_Keeper_DD
+    AegisName: Gate_KeeperDD_IL
     Name: Illusion Gate Keeper DD
     Type: Weapon
     SubType: Shotgun
@@ -121645,7 +121645,7 @@ Body:
          }
       }
   - Id: 28254
-    AegisName: Illusion_Butcher
+    AegisName: Butcher_IL
     Name: Illusion Butcher
     Type: Weapon
     SubType: Gatling
@@ -126297,7 +126297,7 @@ Body:
          bonus5 bAutoSpell,"SO_PSYCHIC_WAVE",3,100,BF_SHORT|BF_WEAPON,1;
       }
   - Id: 28762
-    AegisName: Illusion_Bazerald
+    AegisName: Bazerald_IL
     Name: Illusion Bazerald
     Type: Weapon
     SubType: Dagger
@@ -137352,7 +137352,7 @@ Body:
          bonus2 bSubRace,RC_Player_Human,5;
       }
   - Id: 32301
-    AegisName: Illusion_Gold_Lux
+    AegisName: Gold_Lux_IL
     Name: Illusion Gold Lux
     Type: Weapon
     SubType: Revolver
@@ -150750,7 +150750,7 @@ Body:
       if (.@r>=10)
          bonus2 bSubEle,Ele_Earth,100;
   - Id: 480054
-    AegisName: Morrigane's_Manteau_IL
+    AegisName: Morrigane_Manyeau_IL
     Name: Illusion Morrigane's Manteau
     Type: Armor
     Weight: 600

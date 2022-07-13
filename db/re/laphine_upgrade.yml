@@ -2379,9 +2379,9 @@ Body:
   - Item: ILL_Piece_A
     RandomOptionGroup: ILL_PIECE_A
     TargetItems:
-      - Item: Illusion_Bazerald
-      - Item: Illusion_Butcher
-      - Item: Illusion_Gold_Lux
+      - Item: Bazerald_IL
+      - Item: Butcher_IL
+      - Item: Gold_Lux_IL
       - Item: Infiltrator_IL
       - Item: Illusion_War_Axe
       - Item: Immaterial_Sword_IL
@@ -2397,12 +2397,12 @@ Body:
       - Item: Spectral_Spear_IL
       - Item: Staff_Of_Bordeaux_IL
       - Item: Moonlight_Sword_IL
-      - Item: Illusion_Hunter_Bow
+      - Item: Hunter_Bow_IL
       - Item: Tablet_IL
-      - Item: Illusion_Gate_Keeper_DD
+      - Item: Gate_KeeperDD_IL
       - Item: Counter_Dagger_IL
-      - Item: Illusion_Survivor's_Staff
-      - Item: Illusion_Tae_Goo_Lyeon
+      - Item: Survival_Staff_IL
+      - Item: Taegoolyeon_IL
       - Item: Death_Guidance_IL
       - Item: KatarOfCold_Icicle_IL
       - Item: Brionac_IL
@@ -2418,9 +2418,9 @@ Body:
   - Item: ILL_Piece_B
     RandomOptionGroup: ILL_PIECE_B
     TargetItems:
-      - Item: Illusion_Bazerald
-      - Item: Illusion_Butcher
-      - Item: Illusion_Gold_Lux
+      - Item: Bazerald_IL
+      - Item: Butcher_IL
+      - Item: Gold_Lux_IL
       - Item: Infiltrator_IL
       - Item: Illusion_War_Axe
       - Item: Immaterial_Sword_IL
@@ -2436,12 +2436,12 @@ Body:
       - Item: Spectral_Spear_IL
       - Item: Staff_Of_Bordeaux_IL
       - Item: Moonlight_Sword_IL
-      - Item: Illusion_Hunter_Bow
+      - Item: Hunter_Bow_IL
       - Item: Tablet_IL
-      - Item: Illusion_Gate_Keeper_DD
+      - Item: Gate_KeeperDD_IL
       - Item: Counter_Dagger_IL
-      - Item: Illusion_Survivor's_Staff
-      - Item: Illusion_Tae_Goo_Lyeon
+      - Item: Survival_Staff_IL
+      - Item: Taegoolyeon_IL
       - Item: Death_Guidance_IL
       - Item: KatarOfCold_Icicle_IL
       - Item: Brionac_IL
@@ -4268,27 +4268,27 @@ Body:
 #    MaximumRefine: 9
 #    CardsAllowed: true
 #    TargetItems:
-#      - Item: Illusion_Survivor's_Staff
-#      - Item: Illusion_Gate_Keeper_DD
+#      - Item: Survival_Staff_IL
+#      - Item: Gate_KeeperDD_IL
 #      - Item: Counter_Dagger_IL
-#      - Item: Illusion_Hot_blooded_Headband
-#      - Item: Illusion_Boots
+#      - Item: Headband_Of_Power_IL
+#      - Item: Boots_IL
 #  - Item: S_Teddy_Bear_Box_IL
 #    MinimumRefine: 4
 #    MaximumRefine: 11
 #    CardsAllowed: true
 #    TargetItems:
-#      - Item: Illusion_Survivor's_Staff
-#      - Item: Illusion_Gate_Keeper_DD
+#      - Item: Survival_Staff_IL
+#      - Item: Gate_KeeperDD_IL
 #      - Item: Counter_Dagger_IL
-#      - Item: Illusion_Hot_blooded_Headband
-#      - Item: Illusion_Boots
+#      - Item: Headband_Of_Power_IL
+#      - Item: Boots_IL
 #  - Item: Luanda_Box_IL
 #    MinimumRefine: 4
 #    MaximumRefine: 9
 #    CardsAllowed: true
 #    TargetItems:
-#      - Item: Illusion_Hunter_Bow
+#      - Item: Hunter_Bow_IL
 #      - Item: Tablet_IL
 #      - Item: Illusion_Goibne_Armor
 #      - Item: Illusion_Goibne_Helm
@@ -4299,7 +4299,7 @@ Body:
 #    MaximumRefine: 11
 #    CardsAllowed: true
 #    TargetItems:
-#      - Item: Illusion_Hunter_Bow
+#      - Item: Hunter_Bow_IL
 #      - Item: Tablet_IL
 #      - Item: Illusion_Goibne_Armor
 #      - Item: Illusion_Goibne_Helm
@@ -4310,10 +4310,10 @@ Body:
 #    MaximumRefine: 9
 #    CardsAllowed: true
 #    TargetItems:
-#      - Item: Illusion_Tae_Goo_Lyeon
-#      - Item: Illusion_Butcher
-#      - Item: Illusion_Gold_Lux
-#      - Item: Illusion_Bazerald
+#      - Item: Taegoolyeon_IL
+#      - Item: Butcher_IL
+#      - Item: Gold_Lux_IL
+#      - Item: Bazerald_IL
 #      - Item: Illusion_Morpheus's_Hood
 #      - Item: Illusion_Morpheus's_Shawl
 #  - Item: S_Labyrinth_Box_IL
@@ -4321,10 +4321,10 @@ Body:
 #    MaximumRefine: 11
 #    CardsAllowed: true
 #    TargetItems:
-#      - Item: Illusion_Tae_Goo_Lyeon
-#      - Item: Illusion_Butcher
-#      - Item: Illusion_Gold_Lux
-#      - Item: Illusion_Bazerald
+#      - Item: Taegoolyeon_IL
+#      - Item: Butcher_IL
+#      - Item: Gold_Lux_IL
+#      - Item: Bazerald_IL
 #      - Item: Illusion_Morpheus's_Hood
 #      - Item: Illusion_Morpheus's_Shawl
 #  - Item: Underwater_Box_IL
@@ -4342,7 +4342,7 @@ Body:
 #      - Item: Water_Sprits_Armor_IL
 #      - Item: Chain_Mail_IL
 #      - Item: Morrigane's_Helm_IL
-#      - Item: Morrigane's_Manteau_IL
+#      - Item: Morrigane_Manyeau_IL
 #  - Item: S_Underwater_Box_IL
 #    MinimumRefine: 4
 #    MaximumRefine: 11
@@ -4358,7 +4358,7 @@ Body:
 #      - Item: Water_Sprits_Armor_IL
 #      - Item: Chain_Mail_IL
 #      - Item: Morrigane's_Helm_IL
-#      - Item: Morrigane's_Manteau_IL
+#      - Item: Morrigane_Manyeau_IL
 #  - Item: Circlet_Refine_Cube
 #    MaximumRefine: 10
 #    CardsAllowed: true

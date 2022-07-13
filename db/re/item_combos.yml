@@ -667,7 +667,7 @@ Body:
           - Arrow_Of_Elf
       - Combo:
           - Hunting_Arrow
-          - Illusion_Hunter_Bow
+          - Hunter_Bow_IL
       - Combo:
           - Orc_Archer_Bow_
           - Steel_Arrow
@@ -1038,7 +1038,7 @@ Body:
       autobonus "{ bonus bInt,20; bonus bMatkRate,15; }",30,7000,BF_MAGIC;
   - Combos:
       - Combo:
-          - Illusion_Survivor's_Staff
+          - Survival_Staff_IL
           - Illusion_Survivor_Manteau
     Script: |
       bonus bMatk,50;
@@ -8056,10 +8056,10 @@ Body:
       }
   - Combos:
       - Combo:
-          - Illusion_Goibne_Armor
-          - Illusion_Goibne_Helm
-          - Illusion_Goibne_Spaulders
-          - Illusion_Goibne's_Greaves
+          - Goibne_Armor_IL
+          - Goibne_Helmet_IL
+          - Goibne_Shoulder_IL
+          - Goibne_Boots_IL
     Script: |
       bonus bVit,5;
       bonus bMaxSPrate,5;
@@ -8289,8 +8289,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Illusion_Hunter_Bow
-          - Illusion_Boots
+          - Hunter_Bow_IL
+          - Boots_IL
     Script: |
       .@weapon = getequiprefinerycnt(EQI_HAND_R);
       .@eq = getequiprefinerycnt(EQI_SHOES);
@@ -9047,7 +9047,7 @@ Body:
   - Combos:
       - Combo:
           - Illusion_Fancy_Flower
-          - Illusion_Bazerald
+          - Bazerald_IL
     Script: |
       bonus bMatk,50;
       .@eq = getequiprefinerycnt(EQI_HEAD_TOP);
@@ -9250,8 +9250,8 @@ Body:
             bonus2 bExpAddRace,RC_ANGEL,5;
   - Combos:
       - Combo:
-          - Illusion_Hot_blooded_Headband
-          - Illusion_Gate_Keeper_DD
+          - Headband_Of_Power_IL
+          - Gate_KeeperDD_IL
     Script: |
       .@weapon = getequiprefinerycnt(EQI_HAND_R);
       .@eq = getequiprefinerycnt(EQI_HEAD_TOP);
@@ -9267,8 +9267,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Illusion_Hot_blooded_Headband
-          - Illusion_Gold_Lux
+          - Headband_Of_Power_IL
+          - Gold_Lux_IL
     Script: |
       bonus bBaseAtk,30;
       .@eq = getequiprefinerycnt(EQI_HEAD_TOP);
@@ -10188,8 +10188,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Illusion_Tae_Goo_Lyeon
-          - Illusion_Boots
+          - Taegoolyeon_IL
+          - Boots_IL
     Script: |
       bonus bLongAtkRate,3;
       .@eq = getequiprefinerycnt(EQI_SHOES);
@@ -10817,8 +10817,8 @@ Body:
       }
   - Combos:
       - Combo:
-          - Illusion_Boots
-          - Illusion_Butcher
+          - Boots_IL
+          - Butcher_IL
     Script: |
       bonus2 bAddClass,Class_All,10;
       .@eq = getequiprefinerycnt(EQI_SHOES);
@@ -14193,7 +14193,7 @@ Body:
   - Combos:
       - Combo:
           - Morrigane_Helm_IL
-          - Morrigane's_Manteau_IL
+          - Morrigane_Manyeau_IL
           - Morrigane_Belt_IL
           - Morrigane_Pendant_IL
     Script: |
@@ -19287,7 +19287,7 @@ Body:
   - Combos:
       - Combo:
           - Gelerdria_IL
-          - Illusion_Hot_blooded_Headband
+          - Headband_Of_Power_IL
     Script: |
       .@sum = getequiprefinerycnt(EQI_HAND_R)+getequiprefinerycnt(EQI_HEAD_TOP);
       autobonus3 "{ bonus2 bSkillAtk,\"LG_BANISHINGPOINT\",25; bonus2 bSkillAtk,\"LG_CANNONSPEAR\",25; }",1000,60000,"LG_SHIELDSPELL";
