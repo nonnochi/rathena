@@ -2384,7 +2384,7 @@ Body:
       - Item: Illusion_Gold_Lux
       - Item: Infiltrator_IL
       - Item: Illusion_War_Axe
-      - Item: Illusion_Immaterial_Sword
+      - Item: Immaterial_Sword_IL
       - Item: Illusion_Iron_Driver
       - Item: Illusion_Pole_Axe
       - Item: Book_Of_The_Apo_IL
@@ -2398,9 +2398,9 @@ Body:
       - Item: Staff_Of_Bordeaux_IL
       - Item: Moonlight_Sword_IL
       - Item: Illusion_Hunter_Bow
-      - Item: Illusion_Tablet
+      - Item: Tablet_IL
       - Item: Illusion_Gate_Keeper_DD
-      - Item: Illusion_Counter_Dagger
+      - Item: Counter_Dagger_IL
       - Item: Illusion_Survivor's_Staff
       - Item: Illusion_Tae_Goo_Lyeon
       - Item: Death_Guidance_IL
@@ -2423,7 +2423,7 @@ Body:
       - Item: Illusion_Gold_Lux
       - Item: Infiltrator_IL
       - Item: Illusion_War_Axe
-      - Item: Illusion_Immaterial_Sword
+      - Item: Immaterial_Sword_IL
       - Item: Illusion_Iron_Driver
       - Item: Illusion_Pole_Axe
       - Item: Book_Of_The_Apo_IL
@@ -2437,9 +2437,9 @@ Body:
       - Item: Staff_Of_Bordeaux_IL
       - Item: Moonlight_Sword_IL
       - Item: Illusion_Hunter_Bow
-      - Item: Illusion_Tablet
+      - Item: Tablet_IL
       - Item: Illusion_Gate_Keeper_DD
-      - Item: Illusion_Counter_Dagger
+      - Item: Counter_Dagger_IL
       - Item: Illusion_Survivor's_Staff
       - Item: Illusion_Tae_Goo_Lyeon
       - Item: Death_Guidance_IL
@@ -4248,7 +4248,7 @@ Body:
 #    TargetItems:
 #      - Item: Illusion_Wing_Shuriken
 #      - Item: Illusion_War_Axe
-#      - Item: Illusion_Immaterial_Sword
+#      - Item: Immaterial_Sword_IL
 #      - Item: Illusion_Iron_Driver
 #      - Item: Illusion_Pole_Axe
 #      - Item: Illusion_Fancy_Flower
@@ -4259,7 +4259,7 @@ Body:
 #    TargetItems:
 #      - Item: Illusion_Wing_Shuriken
 #      - Item: Illusion_War_Axe
-#      - Item: Illusion_Immaterial_Sword
+#      - Item: Immaterial_Sword_IL
 #      - Item: Illusion_Iron_Driver
 #      - Item: Illusion_Pole_Axe
 #      - Item: Illusion_Fancy_Flower
@@ -4270,7 +4270,7 @@ Body:
 #    TargetItems:
 #      - Item: Illusion_Survivor's_Staff
 #      - Item: Illusion_Gate_Keeper_DD
-#      - Item: Illusion_Counter_Dagger
+#      - Item: Counter_Dagger_IL
 #      - Item: Illusion_Hot_blooded_Headband
 #      - Item: Illusion_Boots
 #  - Item: S_Teddy_Bear_Box_IL
@@ -4280,7 +4280,7 @@ Body:
 #    TargetItems:
 #      - Item: Illusion_Survivor's_Staff
 #      - Item: Illusion_Gate_Keeper_DD
-#      - Item: Illusion_Counter_Dagger
+#      - Item: Counter_Dagger_IL
 #      - Item: Illusion_Hot_blooded_Headband
 #      - Item: Illusion_Boots
 #  - Item: Luanda_Box_IL
@@ -4289,7 +4289,7 @@ Body:
 #    CardsAllowed: true
 #    TargetItems:
 #      - Item: Illusion_Hunter_Bow
-#      - Item: Illusion_Tablet
+#      - Item: Tablet_IL
 #      - Item: Illusion_Goibne_Armor
 #      - Item: Illusion_Goibne_Helm
 #      - Item: Illusion_Goibne_Spaulders
@@ -4300,7 +4300,7 @@ Body:
 #    CardsAllowed: true
 #    TargetItems:
 #      - Item: Illusion_Hunter_Bow
-#      - Item: Illusion_Tablet
+#      - Item: Tablet_IL
 #      - Item: Illusion_Goibne_Armor
 #      - Item: Illusion_Goibne_Helm
 #      - Item: Illusion_Goibne_Spaulders

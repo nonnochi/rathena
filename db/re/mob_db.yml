@@ -89671,7 +89671,7 @@ Body:
     Drops:
       - Item: Bradium
         Rate: 5000
-      - Item: Hazy_Dream_Fragment
+      - Item: HazyDream
         Rate: 3000
       - Item: Spectral_Spear
         Rate: 500
@@ -89724,7 +89724,7 @@ Body:
         Rate: 100
       - Item: IllusoryStone
         Rate: 200
-      - Item: Hazy_Dream_Fragment
+      - Item: HazyDream
         Rate: 500
       - Item: AngerNineTail_Card
         Rate: 1
@@ -90981,7 +90981,7 @@ Body:
     Modes:
       Aggressive: true
     Drops:
-      - Item: aegis_300292
+      - Item: Extra_Joker_Card
         Rate: 1
         StealProtected: true
       - Item: Jokers_Wild
@@ -91030,7 +91030,7 @@ Body:
     Modes:
       Aggressive: true
     Drops:
-      - Item: aegis_300293
+      - Item: Erzsebet_Card
         Rate: 1
         StealProtected: true
       - Item: Cute_Broom
@@ -91089,7 +91089,7 @@ Body:
         Rate: 10
       - Item: Tentacle
         Rate: 3500
-      - Item: aegis_300294
+      - Item: Jeniffer_Card
         Rate: 1
       - Item: ClockTower_Lead
         Rate: 5
@@ -91132,7 +91132,7 @@ Body:
     Modes:
       Aggressive: true
     Drops:
-      - Item: aegis_300295
+      - Item: General_Orc_Card
         Rate: 1
         StealProtected: true
       - Item: Zelunium_Ore
@@ -91180,7 +91180,7 @@ Body:
       Aggressive: true
       Detector: true
     Drops:
-      - Item: aegis_300296
+      - Item: Sieglouse_Card
         Rate: 1
         StealProtected: true
       - Item: Shining_Round_Shell
@@ -98528,7 +98528,7 @@ Body:
         Rate: 20
       - Item: Shadowdecon
         Rate: 20
-      - Item: Lavaeter_Card
+      - Item: Lava_Eater_Card
         Rate: 1
         StealProtected: true
   - Id: 20921
@@ -98973,7 +98973,7 @@ Body:
         Rate: 4850
       - Item: Etel_Dust
         Rate: 50
-      - Item: aegis_300240
+      - Item: Gan_Ceann_Card
         Rate: 1
         StealProtected: true
   - Id: 20936
@@ -99017,7 +99017,7 @@ Body:
         Rate: 100
       - Item: Honey
         Rate: 100
-      - Item: aegis_300244
+      - Item: Disguiser_Card
         Rate: 1
         StealProtected: true
   - Id: 20937
@@ -99056,7 +99056,7 @@ Body:
         Rate: 4171
       - Item: Rusty_Cleaver
         Rate: 2000
-      - Item: aegis_300241
+      - Item: Brutal_Murderer_Card
         Rate: 1
         StealProtected: true
   - Id: 20938
@@ -99097,7 +99097,7 @@ Body:
         Rate: 5723
       - Item: Black_Powder
         Rate: 500
-      - Item: aegis_300242
+      - Item: Ghost_Cube_Card
         Rate: 1
         StealProtected: true
   - Id: 20939
@@ -99138,7 +99138,7 @@ Body:
         Rate: 1000
       - Item: Yellow_Powder
         Rate: 300
-      - Item: aegis_300243
+      - Item: Lude_Gal_Card
         Rate: 1
         StealProtected: true
   - Id: 20940
@@ -99186,7 +99186,7 @@ Body:
         Rate: 1
       - Item: Yellow_Powder
         Rate: 300
-      - Item: aegis_300245
+      - Item: Bluemoon_Loli_Ruri_Card
         Rate: 1
         StealProtected: true
   - Id: 20941
@@ -99236,7 +99236,7 @@ Body:
         Rate: 10
       - Item: Elder_Branch
         Rate: 100
-      - Item: aegis_300246
+      - Item: Grote_Card
         Rate: 1
         StealProtected: true
   - Id: 20942
@@ -99281,7 +99281,7 @@ Body:
         Rate: 80
       - Item: Ectoplasm
         Rate: 300
-      - Item: aegis_300247
+      - Item: Pierrotzoist_Card
         Rate: 1
         StealProtected: true
   - Id: 20943
@@ -99326,7 +99326,7 @@ Body:
       - Item: Old_Violet_Box
         Rate: 10000
     Drops:
-      - Item: aegis_300248
+      - Item: Death_Witch_Card
         Rate: 1
         StealProtected: true
       - Item: Yggdrasilberry

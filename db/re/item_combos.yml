@@ -14193,7 +14193,7 @@ Body:
   - Combos:
       - Combo:
           - Morrigane_Helm_IL
-          - Morrigane_Manyeau_IL
+          - Morrigane's_Manteau_IL
           - Morrigane_Belt_IL
           - Morrigane_Pendant_IL
     Script: |
@@ -26578,21 +26578,21 @@ Body:
   - Combos:
       - Combo:
           - SmatkStone_Robe_
-          - aegis_310664
+          - Magic_Top
     Script: |
       bonus bSMatk,1;
       bonus bSpl,1;
   - Combos:
       - Combo:
           - SmatkStone_Robe_
-          - aegis_310665
+          - Magic_Middle
     Script: |
       bonus bSMatk,1;
       bonus bSpl,1;
   - Combos:
       - Combo:
           - SmatkStone_Robe_
-          - aegis_310666
+          - Magic_Bottom
     Script: |
       bonus bSMatk,1;
       bonus bSpl,1;
@@ -26606,43 +26606,43 @@ Body:
   - Combos:
       - Combo:
           - SuraStone_Top3_
-          - SuraStone_Robe_
+          - SuraStone_Robe
     Script: |
       bonus2 bSkillAtk,"SR_RIDEINLIGHTNING",20;
   - Combos:
       - Combo:
           - SuraStone_Top3_
-          - SuraStone_Robe2_
+          - SuraStone_Robe2
     Script: |
       bonus2 bSkillAtk,"SR_KNUCKLEARROW",15;
   - Combos:
       - Combo:
           - SuraStone_Middle3_
-          - SuraStone_Robe_
+          - SuraStone_Robe
     Script: |
       bonus2 bSkillAtk,"SR_RIDEINLIGHTNING",20;
   - Combos:
       - Combo:
           - SuraStone_Middle3_
-          - SuraStone_Robe2_
+          - SuraStone_Robe2
     Script: |
       bonus2 bSkillAtk,"SR_TIGERCANNON",15;
   - Combos:
       - Combo:
           - SuraStone_Bottom3_
-          - SuraStone_Robe_
+          - SuraStone_Robe
     Script: |
       bonus2 bSkillAtk,"SR_RAMPAGEBLASTER",15;
   - Combos:
       - Combo:
           - SuraStone_Bottom3_
-          - SuraStone_Robe2_
+          - SuraStone_Robe2
     Script: |
       bonus2 bSkillAtk,"SR_KNUCKLEARROW",15;
   - Combos:
       - Combo:
           - MechanicStone_Top3_
-          - MechanicStone_Robe_
+          - MechanicStone_Robe
     Script: |
       bonus2 bSkillAtk,"NC_AXETORNADO",15;
   - Combos:
@@ -26654,7 +26654,7 @@ Body:
   - Combos:
       - Combo:
           - MechanicStone_Middle3_
-          - MechanicStone_Robe_
+          - MechanicStone_Robe
     Script: |
       bonus2 bSkillAtk,"NC_AXEBOOMERANG",15;
   - Combos:
@@ -26666,7 +26666,7 @@ Body:
   - Combos:
       - Combo:
           - MechanicStone_Bottom3_
-          - MechanicStone_Robe_
+          - MechanicStone_Robe
     Script: |
       bonus2 bSkillAtk,"NC_POWERSWING",15;
   - Combos:
@@ -26678,7 +26678,7 @@ Body:
   - Combos:
       - Combo:
           - GuillcrossStone_Top3_
-          - GuillcrossStone_Robe_
+          - GuillcrossStone_Robe
     Script: |
       bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",15;
   - Combos:
@@ -26690,7 +26690,7 @@ Body:
   - Combos:
       - Combo:
           - GuillcrossStone_Middle3_
-          - GuillcrossStone_Robe_
+          - GuillcrossStone_Robe
     Script: |
       bonus2 bSkillAtk,"GC_ROLLINGCUTTER",15;
   - Combos:
@@ -26702,7 +26702,7 @@ Body:
   - Combos:
       - Combo:
           - GuillcrossStone_Bottom3_
-          - GuillcrossStone_Robe_
+          - GuillcrossStone_Robe
     Script: |
       bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",15;
   - Combos:

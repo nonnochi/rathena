@@ -30621,9 +30621,9 @@ Body:
             Rate: 8
           - Item: GuillcrossStone_Bottom3
             Rate: 8
-          - Item: aegis_100465
+          - Item: Stone_Robe_Box
             Rate: 16
-          - Item: aegis_100495
+          - Item: Stone_Robe2_Box
             Rate: 16
           - Item: Magic_Stone_Top
             Rate: 24
@@ -30667,17 +30667,17 @@ Body:
             Rate: 15
           - Item: GuillotineCrossStone_Bottom2
             Rate: 15
-          - Item: aegis_100496
+          - Item: Stone_Top_Box
             Rate: 36
-          - Item: aegis_100497
+          - Item: Stone_Top2_Box
             Rate: 36
-          - Item: aegis_100498
+          - Item: Stone_Middle_Box
             Rate: 36
-          - Item: aegis_100499
+          - Item: Stone_Middle2_Box
             Rate: 36
-          - Item: aegis_100500
+          - Item: Stone_Bottom_Box
             Rate: 36
-          - Item: aegis_100501
+          - Item: Stone_Bottom2_Box
             Rate: 36
           - Item: CastingStone_Top
             Rate: 36
