@@ -2277,7 +2277,7 @@ Body:
       specialeffect2 EF_MAGICALATTHIT;
       sc_start SC_INCCRI,300000,30;
   - Id: 9896
-    AegisName: aegis_9896
+    AegisName: DF_Power_Booster
     Name: "[Scroll] Power Booster"
     Type: Usable
     Buy: 2
@@ -49735,7 +49735,7 @@ Body:
     Script: |
       getitem "Holy_Cannon_Ball",500;
   - Id: 100178
-    AegisName: aegis_100178
+    AegisName: Cannon_Box_6
     Name: Liquid Condensed Bullet Box
     Type: Usable
     Buy: 20
@@ -49847,7 +49847,7 @@ Body:
     Script: |
       getitem "Explosive_Kunai",500;
   - Id: 100195
-    AegisName: aegis_100195
+    AegisName: Bullet_Case_Full
     Name: Full Metal Jacket Cartridge
     Type: Usable
     Buy: 20
@@ -49855,7 +49855,7 @@ Body:
     Script: |
       getitem "Full_Metal_Jacket",500;
   - Id: 100196
-    AegisName: aegis_100196
+    AegisName: Bullet_Case_Mine
     Name: Projection Landmine Cartridge
     Type: Usable
     Buy: 20
@@ -49863,7 +49863,7 @@ Body:
     Script: |
       getitem "Shooting_Mine",500;
   - Id: 100197
-    AegisName: aegis_100197
+    AegisName: Bullet_Case_Tail
     Name: Dragon Tail Missile Cartridge
     Type: Usable
     Buy: 20
@@ -50328,7 +50328,7 @@ Body:
     Script: |
       laphine_upgrade();
   - Id: 100371
-    AegisName: aegis_100371
+    AegisName: Homun_F_Tablet
     Name: Homunculus Nutritional Supplement
     Type: Usable
     Weight: 10
@@ -50729,7 +50729,7 @@ Body:
     Script: |
       /* get exp, lower amount after lv. 231 */
   - Id: 100465
-    AegisName: aegis_100465
+    AegisName: Stone_Robe_Box
     Name: 3rd/Expanded Stone (Garment) Box
     Type: Usable
     Weight: 10
@@ -50816,7 +50816,7 @@ Body:
     Script: |
       laphine_upgrade();
   - Id: 100495
-    AegisName: aegis_100495
+    AegisName: Stone_Robe2_Box
     Name: 3rd/Expanded Stone II (Garment) Box
     Type: Usable
     Weight: 10
@@ -50825,7 +50825,7 @@ Body:
     Script: |
       getgroupitem(IG_THIRD_JOB_STONE_GARMENT_BOX2);
   - Id: 100496
-    AegisName: aegis_100496
+    AegisName: Stone_Top_Box
     Name: Rebirth/Expanded Stone (Top) Box
     Type: Usable
     Weight: 10
@@ -50834,7 +50834,7 @@ Body:
     Script: |
       getgroupitem(IG_THIRD_JOB_STONE_TOP_BOX);
   - Id: 100497
-    AegisName: aegis_100497
+    AegisName: Stone_Top2_Box
     Name: Rebirth/Expanded Stone II (Top) Box
     Type: Usable
     Weight: 10
@@ -50843,7 +50843,7 @@ Body:
     Script: |
       getgroupitem(IG_THIRD_JOB_STONE_TOP_BOX2);
   - Id: 100498
-    AegisName: aegis_100498
+    AegisName: Stone_Middle_Box
     Name: Rebirth/Expanded Stone (Middle) Box
     Type: Usable
     Weight: 10
@@ -50852,7 +50852,7 @@ Body:
     Script: |
       getgroupitem(IG_THIRD_JOB_STONE_MIDDLE_BOX);
   - Id: 100499
-    AegisName: aegis_100499
+    AegisName: Stone_Middle2_Box
     Name: Rebirth/Expanded Stone II (Middle) Box
     Type: Usable
     Weight: 10
@@ -50861,7 +50861,7 @@ Body:
     Script: |
       getgroupitem(IG_THIRD_JOB_STONE_MIDDLE_BOX2);
   - Id: 100500
-    AegisName: aegis_100500
+    AegisName: Stone_Bottom_Box
     Name: Rebirth/Expanded Stone (Bottom) Box
     Type: Usable
     Weight: 10
@@ -50870,7 +50870,7 @@ Body:
     Script: |
       getgroupitem(IG_THIRD_JOB_STONE_BOTTOM_BOX);
   - Id: 100501
-    AegisName: aegis_100501
+    AegisName: Stone_Bottom2_Box
     Name: Rebirth/Expanded Stone II (Bottom) Box
     Type: Usable
     Weight: 10
@@ -51548,7 +51548,7 @@ Body:
     Script: |
       /* reform(); */
   - Id: 101097
-    AegisName: aegis_101097
+    AegisName: DF_Infinity_Drink
     Name: "[Scroll] Unlimited Drink"
     Type: Usable
     Weight: 10
@@ -52000,7 +52000,7 @@ Body:
     Script: |
       laphine_upgrade();
   - Id: 101271
-    AegisName: aegis_101271
+    AegisName: Enchant_Stone_Box26
     Name: Costume Enchant Stone Box 26
     Type: Usable
     Weight: 10
@@ -52667,7 +52667,7 @@ Body:
     Script: |
       itemheal rand(2730,2750),0;
   - Id: 1100006
-    AegisName: aegis_1100006
+    AegisName: Ep19_Dry_Icegangu
     Name: Dried Ice Gangu
     Type: Healing
     Buy: 10

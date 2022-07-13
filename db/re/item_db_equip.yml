@@ -64112,7 +64112,7 @@ Body:
          bonus bHit,5;
       }
   - Id: 13469
-    AegisName: Illusion_Immaterial_Sword
+    AegisName: Immaterial_Sword_IL
     Name: Illusion Immaterial Sword
     Type: Weapon
     SubType: 1hSword
@@ -85837,7 +85837,7 @@ Body:
       if (.@r>=10)
          bonus bIgnoreMdefRace,RC_All;
   - Id: 19428
-    AegisName: Illusion_Morpheus's_Hood
+    AegisName: Morpheus_Hood_IL
     Name: Illusion Morpheus's Hood
     Type: Armor
     Buy: 20
@@ -100401,7 +100401,7 @@ Body:
          bonus bVariableCastrate,-10;
       }
   - Id: 20948
-    AegisName: Illusion_Morpheus's_Shawl
+    AegisName: Morpheus_Shawl_IL
     Name: Illusion Morpheus's Shawl
     Type: Armor
     Buy: 20
@@ -125125,7 +125125,7 @@ Body:
       bonus2 bMagicAddRace,RC_Demon,.@val;
       bonus2 bMagicAddRace,RC_Undead,.@val;
   - Id: 28626
-    AegisName: Illusion_Tablet
+    AegisName: Tablet_IL
     Name: Illusion Tablet
     Type: Weapon
     SubType: Book
@@ -126143,7 +126143,7 @@ Body:
          bonus5 bAutoSpell,"SO_PSYCHIC_WAVE",3,50,BF_WEAPON|BF_SHORT,1;
       }
   - Id: 28745
-    AegisName: Illusion_Counter_Dagger
+    AegisName: Counter_Dagger_IL
     Name: Illusion Counter Dagger
     Type: Weapon
     SubType: Dagger
@@ -137054,7 +137054,7 @@ Body:
       bonus bMatkRate,5;
       bonus bVariableCastrate,-10;
   - Id: 32238
-    AegisName: Illusion_Morpheus's_Ring
+    AegisName: Morpheus_Ring_IL
     Name: Illusion Morpheus's Ring
     Type: Armor
     Buy: 20
@@ -137068,7 +137068,7 @@ Body:
       bonus bInt,3;
       bonus bMaxSPrate,5;
   - Id: 32239
-    AegisName: Illusion_Morpheus's_Bracelet
+    AegisName: Morpheus_Armlet_IL
     Name: Illusion Morpheus's Bracelet
     Type: Armor
     Buy: 20
@@ -138166,7 +138166,7 @@ Body:
          bonus2 bAddSize,Size_Medium,15;
       }
   - Id: 400053
-    AegisName: Morrigane's_Helm_IL
+    AegisName: Morrigane_Helm_IL
     Name: Illusion Morrigane's Helm
     Type: Armor
     View: 257
@@ -138618,7 +138618,7 @@ Body:
          bonus2 bAddSize,Size_All,10;
       }
   - Id: 400101
-    AegisName: aegis_400101
+    AegisName: GatesofNetherworld
     Name: Gate of Netherworld
     Type: Armor
     Weight: 100
@@ -141386,7 +141386,7 @@ Body:
       bonus bMdef,3;
       bonus bDelayrate,-10;
   - Id: 410016
-    AegisName: aegis_410016
+    AegisName: Battle_Processor
     Name: Battle Processor
     Type: Armor
     View: 1552
@@ -141521,7 +141521,7 @@ Body:
          skill "BA_POEMBRAGI",getskilllv("DC_FORTUNEKISS");
       }
   - Id: 410027
-    AegisName: aegis_410027
+    AegisName: Wonder_Egg_Basket
     Name: Wonder Egg Basket
     Type: Armor
     Locations:
@@ -141666,7 +141666,7 @@ Body:
     EquipLevelMin: 1
     View: 2127
   - Id: 410079
-    AegisName: aegis_410079
+    AegisName: Deepblue_Sunglasses
     Name: Deep Blue Sunglasses
     Type: Armor
     Weight: 100
@@ -141709,7 +141709,7 @@ Body:
     ArmorLevel: 1
     View: 2127
   - Id: 410091
-    AegisName: aegis_410091
+    AegisName: Cor_Core_Booster
     Name: Cor Core Booster
     Type: Armor
     Weight: 100
@@ -141723,7 +141723,7 @@ Body:
       bonus bDelayrate,-8;
       bonus bVariableCastrate,-8;
   - Id: 410092
-    AegisName: aegis_410092
+    AegisName: Cor_Core_Booster_
     Name: Cor Core Booster
     Type: Armor
     Weight: 100
@@ -141738,7 +141738,7 @@ Body:
       bonus bDelayrate,-5;
       bonus bVariableCastrate,-5;
   - Id: 410093
-    AegisName: aegis_410093
+    AegisName: Chain_Of_Seal
     Name: Sealed Chain
     Type: Armor
     Weight: 100
@@ -141777,7 +141777,7 @@ Body:
     ArmorLevel: 1
     View: 2151
   - Id: 410096
-    AegisName: aegis_410096
+    AegisName: Pope_Ribbon_R
     Name: Cinnabar Ribbon
     Type: Armor
     View: 2152
@@ -141798,7 +141798,7 @@ Body:
       if (getskilllv("SP_SOULUNITY") == 7)
          bonus bAspd,2;
   - Id: 410097
-    AegisName: aegis_410097
+    AegisName: Pope_Ribbon_R_
     Name: Cinnabar Ribbon
     Type: Armor
     View: 2152
@@ -141944,7 +141944,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,5;
       bonus5 bAutoSpell,"MG_SOULSTRIKE",10,100,BF_SHORT|BF_WEAPON,1;
   - Id: 420006
-    AegisName: aegis_420006
+    AegisName: Vassalage_Necklace
     Name: Collar of Slavery
     Type: Armor
     View: 2018
@@ -141966,7 +141966,7 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
   - Id: 420014
-    AegisName: aegis_420014
+    AegisName: C_Japanes_Hair
     Name: Costume Japanese Hair
     Type: Armor
     Locations:
@@ -142066,7 +142066,7 @@ Body:
     ArmorLevel: 1
     View: 2056
   - Id: 420030
-    AegisName: aegis_420030
+    AegisName: Falconer_Flute_C
     Name: Feather In Mouth
     Type: Armor
     View: 1143
@@ -142077,7 +142077,7 @@ Body:
     Script: |
       bonus bLongAtkRate,5;
   - Id: 420031
-    AegisName: aegis_420031
+    AegisName: Mask_Of_Orochimaru_C
     Name: Ninja's Blue Mask
     Type: Armor
     View: 1089
@@ -142088,7 +142088,7 @@ Body:
     Script: |
       bonus bShortAtkRate,5;
   - Id: 420033
-    AegisName: aegis_420033
+    AegisName: C_Airy_Two_Side_Up_WH
     Name: Costume Airy Twin Tails (White)
     Type: Armor
     Locations:
@@ -142294,7 +142294,7 @@ Body:
     ArmorLevel: 1
     View: 2124
   - Id: 420068
-    AegisName: aegis_420068
+    AegisName: Lord_of_Royals
     Name: Lord of Royals
     Type: Armor
     View: 2128
@@ -142340,7 +142340,7 @@ Body:
       NoMail: true
       NoAuction: true
   - Id: 420076
-    AegisName: Vassalage_Necklace
+    AegisName: Choker_Of_Restriction
     Name: Bondage Necklace
     Type: Armor
     Weight: 10
@@ -142386,7 +142386,7 @@ Body:
     ArmorLevel: 1
     View: 2164
   - Id: 420092
-    AegisName: aegis_420092
+    AegisName: C_Silky_Long_SV
     Name: Clothes silky long (silver)    # !todo check english name
     Type: Armor
     Locations:
@@ -142698,7 +142698,7 @@ Body:
     UnEquipScript: |
       hateffect HAT_EF_FLUTTER_BUTTERFLY,false;
   - Id: 436000
-    AegisName: aegis_436000
+    AegisName: Tha_Maero_MaskK
     Name: Thanatos's Maeror Mask
     Type: Armor
     View: 666
@@ -142713,7 +142713,7 @@ Body:
       bonus2 bMagicAddRace,RC_Player_Doram,10;
       bonus bMatkRate,3;
   - Id: 436001
-    AegisName: aegis_436001
+    AegisName: Tha_Despero_MaskK
     Name: Thanatos's Despero Mask
     Type: Armor
     View: 693
@@ -142728,7 +142728,7 @@ Body:
       bonus2 bAddRace,RC_Player_Doram,10;
       bonus2 bAddClass,Class_All,3;
   - Id: 436002
-    AegisName: aegis_436002
+    AegisName: Thanatos_Mal_MaskK
     Name: Thanatos's Odium Mask
     Type: Armor
     View: 667
@@ -142744,7 +142744,7 @@ Body:
       bonus2 bSubRace,RC_Player_Doram,5;
       bonus bMaxHPrate,5;
   - Id: 436003
-    AegisName: aegis_436003
+    AegisName: Thanatos_Mal_MaskK_
     Name: Thanatos's Odium Mask
     Type: Armor
     View: 667
@@ -142761,7 +142761,7 @@ Body:
       bonus2 bSubRace,RC_Player_Doram,5;
       bonus bMaxHPrate,5;
   - Id: 436004
-    AegisName: aegis_436004
+    AegisName: Tha_Despero_MaskK_
     Name: Thanatos's Despero Mask
     Type: Armor
     View: 693
@@ -142777,7 +142777,7 @@ Body:
       bonus2 bAddRace,RC_Player_Doram,10;
       bonus2 bAddClass,Class_All,3;
   - Id: 436005
-    AegisName: aegis_436005
+    AegisName: Tha_Maero_MaskK_
     Name: Thanatos's Maeror Mask
     Type: Armor
     View: 666
@@ -142885,7 +142885,7 @@ Body:
       NoMail: true
       NoAuction: true
   - Id: 440004
-    AegisName: aegis_440004
+    AegisName: C_Close_Helmet
     Name: Costume Close Helmet    # !todo check english name
     Type: Armor
     Locations:
@@ -146772,7 +146772,7 @@ Body:
          }
       }
   - Id: 450151
-    AegisName: aegis_450151
+    AegisName: Adv_Cotton_Shirt
     Name: Reinforced Cotton Shirt
     Type: Armor
     Slots: 1
@@ -146845,7 +146845,7 @@ Body:
          bonus bMaxSPrate,2;
       }
   - Id: 450165
-    AegisName: aegis_450165
+    AegisName: Striking_Mail
     Name: Striking Armour
     Type: Armor
     Weight: 1000
@@ -147294,7 +147294,7 @@ Body:
          }
       }
   - Id: 450180
-    AegisName: aegis_450180
+    AegisName: Cute_Frog_Raincoat
     Name: Pushy Frogy Kappa
     Type: Armor
     Weight: 100
@@ -147799,7 +147799,7 @@ Body:
         }
       }
   - Id: 450208
-    AegisName: aegis_450208
+    AegisName: Paracelsus_Coat
     Name: Paracelsus Coat
     Type: Armor
     Weight: 1000
@@ -147945,7 +147945,7 @@ Body:
          }
       }
   - Id: 460012
-    AegisName: aegis_460012
+    AegisName: Avd_Guard
     Name: Reinforced Shield
     Type: Armor
     Weight: 500
@@ -149095,7 +149095,7 @@ Body:
          bonus2 bSkillAtk,"GN_CARTCANNON",BaseLevel/2;
       }
   - Id: 470062
-    AegisName: aegis_470062
+    AegisName: Lethargy_P_Shoes
     Name: Mindform Shoes of Lethargy    # !todo check english name
     Type: Armor
     Defense: 12
@@ -149122,7 +149122,7 @@ Body:
          bonus2 bIgnoreDefRaceRate,RC_All,50;
       }
   - Id: 470063
-    AegisName: aegis_470063
+    AegisName: Lethargy_P_Shoes_
     Name: Mindform Shoes of Lethargy    # !todo check english name
     Type: Armor
     Defense: 12
@@ -149524,7 +149524,7 @@ Body:
          bonus2 bIgnoreMdefRaceRate,RC_All,50;
       }
   - Id: 470080
-    AegisName: aegis_470080
+    AegisName: Arrogance_P_Shoes
     Name: Mindform Shoes of Arrogance
     Type: Armor
     Weight: 200
@@ -149550,7 +149550,7 @@ Body:
          bonus2 bIgnoreDefRaceRate,RC_All,50;
       }
   - Id: 470081
-    AegisName: aegis_470081
+    AegisName: Arrogance_P_Shoes_
     Name: Mindform Shoes of Arrogance
     Type: Armor
     Weight: 200
@@ -149577,7 +149577,7 @@ Body:
          bonus2 bIgnoreDefRaceRate,RC_All,50;
       }
   - Id: 470082
-    AegisName: aegis_470082
+    AegisName: Regeneration_P_Shoes
     Name: Mindform Shoes of Regeneration
     Type: Armor
     Weight: 200
@@ -149602,7 +149602,7 @@ Body:
          bonus bDelayrate,-15;
       }
   - Id: 470083
-    AegisName: aegis_470083
+    AegisName: Regeneration_P_Shoes_
     Name: Mindform Shoes of Regeneration
     Type: Armor
     Weight: 200
@@ -149662,7 +149662,7 @@ Body:
          bonus bDelayrate,-10;
       }
   - Id: 470085
-    AegisName: aegis_470085
+    AegisName: Rune_Greave_JP_
     Name: Rune Greaves
     Type: Armor
     Weight: 400
@@ -149733,7 +149733,7 @@ Body:
          bonus2 bMagicAtkEle,Ele_All,7;
       }
   - Id: 470089
-    AegisName: aegis_470089
+    AegisName: Runaway_P_Shoes
     Name: Mindform Shoes of Rampage    # !todo check english name
     Type: Armor
     Defense: 12
@@ -149757,7 +149757,7 @@ Body:
          bonus bUseSPrate,-4;
       }
   - Id: 470090
-    AegisName: aegis_470090
+    AegisName: Runaway_P_Shoes_
     Name: Mindform Shoes of Rampage    # !todo check english name
     Type: Armor
     Defense: 12
@@ -149782,7 +149782,7 @@ Body:
          bonus bUseSPrate,-4;
       }
   - Id: 470091
-    AegisName: aegis_470091
+    AegisName: Disappointment_P_Shoes
     Name: Mindform Shoes of Despair    # !todo check english name
     Type: Armor
     Defense: 12
@@ -149810,7 +149810,7 @@ Body:
          bonus2 bMagicAddEle,Ele_Ghost,15;
       }
   - Id: 470092
-    AegisName: aegis_470092
+    AegisName: Disappointment_P_Shoes_
     Name: Mindform Shoes of Despair    # !todo check english name
     Type: Armor
     Defense: 12
@@ -149924,7 +149924,7 @@ Body:
       bonus bMaxHPrate,(.@r/3);
       bonus bMaxSPrate,(.@r/3);
   - Id: 470097
-    AegisName: aegis_470097
+    AegisName: HalfBloodPrincess_Shoes
     Name: Witch Hunt Shoes
     Type: Armor
     Weight: 1000
@@ -150781,7 +150781,7 @@ Body:
          bonus2 bAddRace,RC_DemiHuman,10;
       }
   - Id: 480056
-    AegisName: aegis_480056
+    AegisName: C_Wing_Of_Angel_Move_BK
     Name: Costume Heavenly Fallen Angel Wings
     Type: Armor
     Locations:
@@ -150789,7 +150789,7 @@ Body:
     ArmorLevel: 1
     View: 73
   - Id: 480058
-    AegisName: aegis_480058
+    AegisName: C_Wing_Of_Angel_Move_GD
     Name: Costume Wavy Golden Angel Wings
     Type: Armor
     Locations:
@@ -151036,7 +151036,7 @@ Body:
          bonus2 bVariableCastrate,"SU_SVG_SPIRIT",-20;
       }
   - Id: 480077
-    AegisName: aegis_480077
+    AegisName: Magma_Manteau
     Name: Lava Manteau
     Type: Armor
     Weight: 300
@@ -151217,7 +151217,7 @@ Body:
          bonus bAspdRate,7;
       }
   - Id: 480092
-    AegisName: aegis_480092
+    AegisName: C_Sudden_Wealth_J
     Name: Costume Sudden Wealth    # !todo check english name
     Type: Armor
     Locations:
@@ -151387,7 +151387,7 @@ Body:
     ArmorLevel: 1
     View: 104
   - Id: 480108
-    AegisName: aegis_480108
+    AegisName: C_Poring_Basket
     Name: Costume Poring Basket    # !todo check english name
     Type: Armor
     Locations:
@@ -151412,7 +151412,7 @@ Body:
     EquipLevelMin: 1
     View: 106
   - Id: 480114
-    AegisName: aegis_480114
+    AegisName: Striking_Mikoshi
     Name: Striking Mikoshi
     Type: Armor
     Weight: 600
@@ -151459,7 +151459,7 @@ Body:
     ArmorLevel: 1
     View: 114
   - Id: 480119
-    AegisName: aegis_480119
+    AegisName: C_Niflheim_Key
     Name: Costume Niflheim Key    # !todo check english name
     Type: Armor
     Locations:
@@ -151500,7 +151500,7 @@ Body:
          bonus2 bSubEle,Ele_Earth,.@bonus*.@c;
       }
   - Id: 480121
-    AegisName: aegis_480121
+    AegisName: C_Striking_Mikoshi
     Name: Costume Striking Mikoshi    # !todo check english name
     Type: Armor
     Locations:
@@ -151516,15 +151516,15 @@ Body:
     ArmorLevel: 1
     View: 112
   - Id: 480123
-    AegisName: aegis_480123
-    Name: Costume Nydhog Rumor    # !todo check english name
+    AegisName: C_Nydhog_Rumor
+    Name: Costume Nydhog's Rumor
     Type: Armor
     Locations:
       Costume_Garment: true
     ArmorLevel: 1
     View: 113
   - Id: 480124
-    AegisName: aegis_480124
+    AegisName: Cvt_Physical_Wing
     Name: Convertible Physical Wing
     Type: Armor
     Weight: 400
@@ -151551,7 +151551,7 @@ Body:
          }
       }
   - Id: 480125
-    AegisName: aegis_480125
+    AegisName: Cvt_Magical_Wing
     Name: Convertible Magical Wing
     Type: Armor
     Weight: 400
@@ -151615,7 +151615,7 @@ Body:
       Costume_Garment: true
     ArmorLevel: 1
   - Id: 480134
-    AegisName: aegis_480134
+    AegisName: Avareco
     Name: Avareco
     Type: Armor
     Weight: 100
@@ -151694,8 +151694,8 @@ Body:
       bonus2 bAddSize,Size_Large,5*(.@r/5);
       bonus2 bMagicAddSize,Size_Large,5*(.@r/5);
   - Id: 480137
-    AegisName: aegis_480137
-    Name: Costume Filir Bag    # !todo check english name
+    AegisName: C_Filir_Bag
+    Name: Costume Filir Bag
     Type: Armor
     Locations:
       Costume_Garment: true
@@ -152936,7 +152936,7 @@ Body:
          }
       }
   - Id: 490069
-    AegisName: Morrigane's_Belt_IL
+    AegisName: Morrigane_Belt_IL
     Name: Illusion Morrigane's Belt
     Type: Armor
     Weight: 200
@@ -152952,7 +152952,7 @@ Body:
       bonus bMaxHPrate,5;
       bonus bStr,3;
   - Id: 490070
-    AegisName: Morrigane's_Pendant_IL
+    AegisName: Morrigane_Pendant_IL
     Name: Illusion Morrigane's Pendant
     Type: Armor
     Weight: 200
@@ -153160,7 +153160,7 @@ Body:
     Script: |
       bonus bAllTraits,6-(JobLevel/5);
   - Id: 490090
-    AegisName: aegis_490090
+    AegisName: Egir_Ring_K
     Name: Aegir Ring
     Type: Armor
     Weight: 200
@@ -153174,7 +153174,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,2;
       bonus bMatk,10;
   - Id: 490091
-    AegisName: aegis_490091
+    AegisName: Egir_Necklace_K
     Name: Aegir Necklace
     Type: Armor
     Weight: 200
@@ -153237,7 +153237,7 @@ Body:
       if (getskilllv("SC_FEINTBOMB") == 10)
          bonus bSPDrainValue,3;
   - Id: 490098
-    AegisName: aegis_490098
+    AegisName: Ring_of_Pazuzu
     Name: Ring of Pazuzu
     Type: Armor
     Weight: 100
@@ -153305,7 +153305,7 @@ Body:
       bonus bMatkRate,5;
       bonus2 bAddClass,Class_All,5;
   - Id: 490102
-    AegisName: aegis_490102
+    AegisName: Skull_Ring
     Name: Skull Ring
     Type: Armor
     Weight: 100
@@ -153420,7 +153420,7 @@ Body:
       bonus bMatkRate,7;
       bonus bMaxSPrate,5;
   - Id: 490110
-    AegisName: aegis_490110
+    AegisName: Anulus_Ira
     Name: Anulus Ira
     Type: Armor
     Weight: 100
@@ -153474,7 +153474,7 @@ Body:
       if (getskilllv("RK_DEATHBOUND") >= 10)
          bonus2 bAddClass,Class_All,10;
   - Id: 490118
-    AegisName: aegis_490118
+    AegisName: RingOfAdoramus
     Name: Adoration Ring
     Type: Armor
     Weight: 100
@@ -153507,7 +153507,7 @@ Body:
       if (getskilllv("AB_OFFERTORIUM") == 5)
          bonus bVariableCastrate,-30;
   - Id: 490119
-    AegisName: aegis_490119
+    AegisName: Battle_Core
     Name: Alpha Core
     Type: Armor
     Weight: 1500
@@ -153699,7 +153699,7 @@ Body:
       bonus bVariableCastrate,-10;
       bonus bAspdRate,5;
   - Id: 490130
-    AegisName: aegis_490130
+    AegisName: SkynetBlowRing
     Name: Bracelet of Chenxu
     Type: Armor
     Weight: 400
@@ -153856,7 +153856,7 @@ Body:
       bonus bVariableCastrate,-7;
       bonus bHplus,2;
   - Id: 490139
-    AegisName: aegis_490139
+    AegisName: Ring_Of_TheAbyssKing_A
     Name: Awakening Abyss King's Ring
     Type: Armor
     Weight: 100
@@ -153869,7 +153869,7 @@ Body:
       bonus bMaxHP,BaseLevel*50;
       bonus bMaxSP,BaseLevel*5;
   - Id: 490141
-    AegisName: aegis_490141
+    AegisName: Metal_Pick
     Name: Metal Pick
     Type: Armor
     Weight: 100
@@ -153896,7 +153896,7 @@ Body:
          bonus2 bMagicAddClass,Class_Boss,10;
       }
   - Id: 490142
-    AegisName: aegis_490142
+    AegisName: Omega_Core
     Name: Omega Core
     Type: Armor
     Weight: 500
@@ -153909,7 +153909,7 @@ Body:
       bonus bAspdRate,10;
       bonus2 bAddRace,RC_All,10;
   - Id: 490143
-    AegisName: aegis_490143
+    AegisName: Omega_Core_
     Name: Omega Core
     Type: Armor
     Weight: 500
@@ -153923,7 +153923,7 @@ Body:
       bonus bAspdRate,10;
       bonus2 bAddRace,RC_All,10;
   - Id: 490145
-    AegisName: aegis_490145
+    AegisName: Ring_Of_Ceryneian
     Name: Ring of Ceryneian
     Type: Armor
     Weight: 100
@@ -153950,7 +153950,7 @@ Body:
     UnEquipScript: |
       sc_end SC_UNLIMIT;
   - Id: 490146
-    AegisName: aegis_490146
+    AegisName: Paracelsus_Glove
     Name: Paracelsus Glove
     Type: Armor
     Weight: 100
@@ -153973,7 +153973,7 @@ Body:
       if (getskilllv("GN_FIRE_EXPANSION") == 5)
          bonus2 bAddSize,Size_All,10;
   - Id: 490152
-    AegisName: aegis_490152
+    AegisName: Hero_Token_AG
     Name: Heroic Token (Arch Mage)
     Type: Armor
     Weight: 200
@@ -153992,7 +153992,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490153
-    AegisName: aegis_490153
+    AegisName: Hero_Token_WH
     Name: Heroic Token (Windhawk)
     Type: Armor
     Weight: 200
@@ -154011,7 +154011,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490155
-    AegisName: aegis_490155
+    AegisName: Hero_Token_IG
     Name: Heroic Token (Imperial Guard)
     Type: Armor
     Weight: 200
@@ -154030,7 +154030,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490156
-    AegisName: aegis_490156
+    AegisName: Hero_Token_CD
     Name: Heroic Token (Cardinal)
     Type: Armor
     Weight: 200
@@ -154049,7 +154049,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490159
-    AegisName: Omega_Core
+    AegisName: Rough_Core
     Name: Rough Core
     Type: Armor
     Weight: 500
@@ -154119,7 +154119,7 @@ Body:
     Script: |
       bonus bAllStats,2;
   - Id: 490164
-    AegisName: aegis_490164
+    AegisName: Hero_Token_SHC
     Name: Heroic Token (Shadow Cross)
     Type: Armor
     Weight: 200
@@ -154138,7 +154138,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490165
-    AegisName: aegis_490165
+    AegisName: Hero_Token_ABC
     Name: Heroic Token (Abyss Chaser)
     Type: Armor
     Weight: 200
@@ -154157,7 +154157,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490166
-    AegisName: aegis_490166
+    AegisName: Hero_Token_DK
     Name: Heroic Token (Dragon Knight)
     Type: Armor
     Weight: 200
@@ -154176,7 +154176,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490167
-    AegisName: aegis_490167
+    AegisName: Hero_Token_BO
     Name: Heroic Token (Biolo)
     Type: Armor
     Weight: 200
@@ -154195,7 +154195,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490171
-    AegisName: aegis_490171
+    AegisName: Hero_Token_EM
     Name: Heroic Token (Elemental Master)
     Type: Armor
     Weight: 200
@@ -154214,7 +154214,7 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490172
-    AegisName: aegis_490172
+    AegisName: Hero_Token_TR
     Name: Heroic Token (Troubadour / Trouvere)
     Type: Armor
     Weight: 200
@@ -154285,8 +154285,8 @@ Body:
       bonus bMatkRate,7;
       bonus bMaxSPrate,7;
   - Id: 490180
-    AegisName: aegis_490180
-    Name: Mark of a Hero (Meister)    # !todo check english name
+    AegisName: Hero_Token_MT
+    Name: Heroic Token (Meister) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154304,8 +154304,8 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490181
-    AegisName: aegis_490181
-    Name: Token of a Hero (Inquisitor)    # !todo check english name
+    AegisName: Hero_Token_IQ
+    Name: Heroic Token (Inquisitor) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154337,8 +154337,8 @@ Body:
       bonus bMatk,40;
       bonus2 bSubRace,RC_Undead,4;
   - Id: 490184
-    AegisName: aegis_490184
-    Name: Token of a Hero (Shinkiro & Shiranui)    # !todo check english name
+    AegisName: Hero_Token_SS
+    Name: Heroic Token (Shinkiro & Shiranui) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154356,8 +154356,8 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490185
-    AegisName: aegis_490185
-    Name: Token of a Hero (Night's Watch)    # !todo check english name
+    AegisName: Hero_Token_NW
+    Name: Heroic Token (Night Watch) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154375,8 +154375,8 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490186
-    AegisName: aegis_490186
-    Name: Token of a Hero (Youngdosa)    # !todo check english name
+    AegisName: Hero_Token_SOA
+    Name: Heroic Token (Soul Ascetic) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154394,8 +154394,8 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490187
-    AegisName: aegis_490187
-    Name: Token of a Hero (Heaven)    # !todo check english name
+    AegisName: Hero_Token_SKE
+    Name: Heroic Token (Sky Emperor) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154413,8 +154413,8 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490188
-    AegisName: aegis_490188
-    Name: Token of a Hero (Spirit Death)    # !todo check english name
+    AegisName: Hero_Token_SH
+    Name: Heroic Token (Spirit Handler) [1]
     Type: Armor
     Weight: 200
     Defense: 10
@@ -154432,8 +154432,8 @@ Body:
       bonus2 bAddClass,Class_All,10;
       bonus bVariableCastrate,-10;
   - Id: 490193
-    AegisName: aegis_490193
-    Name: Traveler Ring    # !todo check english name
+    AegisName: Traveler_Ring
+    Name: Traveler Ring [1]
     Type: Armor
     Weight: 300
     Slots: 1
