@@ -6560,8 +6560,9 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      input .@megaphone$;
-      announce strcharinfo(0) + ": " + .@megaphone$,bc_all,0xFF0000;
+      callfunc ("megaphone");
+#      input .@megaphone$;
+#      announce strcharinfo(0) + ": " + .@megaphone$,bc_all,0xFF0000;
   - Id: 12225
     AegisName: Sweet_Candy_Striper
     Name: Sweet Candy Cane
