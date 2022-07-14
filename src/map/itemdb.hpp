@@ -22,7 +22,9 @@ const t_itemid UNKNOWN_ITEM_ID = 512;
 /// The maximum number of item delays
 #define MAX_ITEMDELAYS	10
 ///Designed for search functions, species max number of matches to display.
-#define MAX_SEARCH	5
+#ifndef MAX_SEARCH
+#define MAX_SEARCH	10
+#endif
 
 #define MAX_ROULETTE_LEVEL 7 /** client-defined value **/
 #define MAX_ROULETTE_COLUMNS 9 /** client-defined value **/
@@ -968,12 +970,29 @@ enum e_random_item_group {
 	IG_SHADOW_CUBE_SHIELD,
 	IG_SHADOW_CUBE_SHOES,
 	IG_SHADOW_CUBE_WEAPON,
-	IG_ODIN_RELIC,
 	IG_AUTOMATIC_MODULE_MIX,
 	IG_EPIC_MODULE_MIX,
 	IG_AUTO_M_I_BOX_A,
 	IG_AUTO_M_I_BOX_B,
 	IG_ILLUSION_MODULE_MIX,
+
+	IG_ODIN_RELIC,
+
+	IG_BS_ITEM_M_S_52,
+	IG_BS_ITEM_M_S_53,
+	IG_BS_ITEM_M_S_54,
+	IG_BS_ITEM_M_S_55,
+	IG_BS_ITEM_M_S_56,
+	IG_BS_ITEM_M_S_57,
+	IG_BS_ITEM_M_S_58,
+	IG_BS_ITEM_M_S_59,
+	IG_MONTHLY_PACKAGE_1,
+	IG_MONTHLY_PACKAGE_2,
+	IG_MONTHLY_PACKAGE_3,
+	IG_MONTHLY_BUFF_PACKAGE,
+	IG_MONTHLY_BATTLE_PACKAGE,
+	IG_MD_AIRBOAT_EXPBOX,
+	IG_ENCHANT_STONE_BOX27,
 
 	IG_MAX,
 };
@@ -1365,7 +1384,7 @@ public:
 
 extern LaphineUpgradeDatabase laphine_upgrade_db;
 
-int itemdb_searchname_array(struct item_data** data, int size, const char *str);
+uint16 itemdb_searchname_array(struct item_data** data, uint16 size, const char *str);
 struct item_data* itemdb_search(t_itemid nameid);
 struct item_data* itemdb_exists(t_itemid nameid);
 #define itemdb_name(n) itemdb_search(n)->name.c_str()

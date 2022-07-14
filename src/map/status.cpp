@@ -933,6 +933,8 @@ void EnchantgradeDatabase::loadingFinished(){
 			}
 		}
 	}
+
+	TypesafeYamlDatabase::loadingFinished();
 }
 
 EnchantgradeDatabase enchantgrade_db;
@@ -1897,7 +1899,7 @@ bool status_check_skilluse(struct block_list *src, struct block_list *target, ui
 			return false;
 		}
 
-		if (skill_id && sc->cant.cast && skill_id != RK_REFRESH && skill_id != SU_GROOMING && skill_id != SR_GENTLETOUCH_CURE) { // Stuned/Frozen/etc
+		if (skill_id > 0 && sc->opt1 && sc->opt1 != OPT1_STONEWAIT && sc->opt1 != OPT1_BURNING && skill_id != RK_REFRESH && skill_id != SU_GROOMING && skill_id != SR_GENTLETOUCH_CURE) { // Stuned/Frozen/etc
 			if (flag != 1) // Can't cast, casted stuff can't damage.
 				return false;
 			if (skill_get_casttype(skill_id) == CAST_DAMAGE)
@@ -7510,6 +7512,8 @@ static defType status_calc_def(struct block_list *bl, struct status_change *sc, 
 		def += sc->data[SC_GUARD_STANCE]->val2;
 	if (sc->data[SC_ATTACK_STANCE])
 		def -= sc->data[SC_ATTACK_STANCE]->val2;
+	if (sc->data[SC_M_DEFSCROLL])
+		def += sc->data[SC_M_DEFSCROLL]->val1;
 
 	return (defType)cap_value(def,DEFTYPE_MIN,DEFTYPE_MAX);
 }
@@ -7644,6 +7648,8 @@ static defType status_calc_mdef(struct block_list *bl, struct status_change *sc,
 		mdef += sc->data[SC_PACKING_ENVELOPE8]->val1;
 	if (sc->data[SC_CLIMAX_CRYIMP])
 		mdef += 100;
+	if (sc->data[SC_M_DEFSCROLL])
+		mdef += sc->data[SC_M_DEFSCROLL]->val2;
 
 	return (defType)cap_value(mdef,DEFTYPE_MIN,DEFTYPE_MAX);
 }
@@ -10430,7 +10436,10 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 			val2 = val1*20; // SP gained
 			break;
 		case SC_KYRIE:
-			if( val4 ) { // Formulas for Praefatio
+			if (val2 == RL_P_ALTER) { // Formulas for Platinum Altar caused Kyrie Eleison
+				val2 = status->max_hp * (val1 * 5) / 100; //%Max HP to absorb
+				val3 = 3 + val1; //Hits
+			} else if( val4 ) { // Formulas for Praefatio
 				val2 = (status->max_hp * (val1 * 2 + 10) / 100) + val4 * 2; //%Max HP to absorb
 				val3 = 6 + val1; //Hits
 			} else { // Formulas for Kyrie Eleison
@@ -12087,7 +12096,6 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 				if (sd)
 					n = (uint8)sd->spiritball_old;
 				val2 = 10 * n; // +atk
-				val3 = (status->max_hp * (val1 * 5) / 100); // Barrier HP
 			}
 			break;
 		case SC_E_CHAIN:
@@ -13762,7 +13770,7 @@ TIMER_FUNC(status_change_timer){
 		if (sce->val4 >= 0 && status->hp > status->max_hp / 4)
 			status_percent_damage(nullptr, bl, -1, 0, false);
 		break;
-	case SC_HANDICAPSTATE_DEADLYPOISON:
+	case SC_HANDICAPSTATE_DEADLYPOISON: // TODO actual damage unknown [Muh]
 	case SC_POISON:
 	case SC_DPOISON:
 		if (sce->val4 >= 0 && !sc->data[SC_SLOWPOISON]) {
@@ -13791,14 +13799,7 @@ TIMER_FUNC(status_change_timer){
 			status_heal(bl, 0, -(int)status->max_sp * 2 / 100, 0, 1);
 		}
 		break;
-	case SC_HANDICAPSTATE_CONFLAGRATION:
-		if (sce->val4 >= 0) {
-			int64 damage = 2000; // Deals fixed (1000 + 3%*MaxHP)
-			map_freeblock_lock();
-			dounlock = true;
-			status_zap(bl, damage, 0, 0);
-		}
-		break;
+	case SC_HANDICAPSTATE_CONFLAGRATION: // TODO actual damage unknown [Muh]
 	case SC_BURNING:
 		if (sce->val4 >= 0) {
 			int64 damage = 1000 + (3 * status->max_hp) / 100; // Deals fixed (1000 + 3%*MaxHP)
@@ -15806,6 +15807,8 @@ void StatusDatabase::loadingFinished(){
 			this->StatusRelevantBLTypes[status->icon] = BL_PC;
 		}
 	}
+
+	TypesafeYamlDatabase::loadingFinished();
 }
 
 StatusDatabase status_db;

@@ -45,22 +45,79 @@ Header:
   Type: BARTER_DB
   Version: 1
 
-Footer:
-  Imports:
-  - Path: npc/re/merchants/barters/enchantgrade.yml
-  - Path: npc/re/merchants/barters/Extended_Ammunition.yml
-  - Path: npc/re/merchants/barters/quests_16_1.yml
-  - Path: npc/re/merchants/barters/quests_16_2.yml
-  - Path: npc/re/merchants/barters/quests_17_1.yml
-  - Path: npc/re/merchants/barters/quests_17_2.yml
-  - Path: npc/re/merchants/barters/refine.yml
-## illusion barter
-  - Path: npc/re/merchants/barters/ill_abyss.yml
-  - Path: npc/re/merchants/barters/ill_frozen.yml
-  - Path: npc/re/merchants/barters/ill_labyrinth.yml
-  - Path: npc/re/merchants/barters/ill_luanda.yml
-  - Path: npc/re/merchants/barters/ill_moonlight.yml
-  - Path: npc/re/merchants/barters/ill_teddy.yml
-  - Path: npc/re/merchants/barters/ill_twins.yml
-  - Path: npc/re/merchants/barters/ill_vampire.yml
-  - Path: npc/re/merchants/barters/ill_underwater.yml
+Body:
+###########################################################################
+##= llusionSet
+###########################################################################
+  - Name: llusionSet
+    Items:
+      - Index: 0
+        Item: Illusion_Armor_A
+        Zeny: 500000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 1
+        Item: Illusion_Armor_B
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 2
+        Item: Illusion_Engine_A
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 3
+        Item: Illusion_Engine_B
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 4
+        Item: Illusion_Leg_A
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 5
+        Item: Illusion_Leg_B
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 6
+        Item: Illusion_B_R
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 7
+        Item: Illusion_B_L
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 8
+        Item: Illusion_BC_R
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 9
+        Item: Illusion_BC_L
+        Zeny: 5000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50

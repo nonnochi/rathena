@@ -45,22 +45,85 @@ Header:
   Type: BARTER_DB
   Version: 1
 
-Footer:
-  Imports:
-  - Path: npc/re/merchants/barters/enchantgrade.yml
-  - Path: npc/re/merchants/barters/Extended_Ammunition.yml
-  - Path: npc/re/merchants/barters/quests_16_1.yml
-  - Path: npc/re/merchants/barters/quests_16_2.yml
-  - Path: npc/re/merchants/barters/quests_17_1.yml
-  - Path: npc/re/merchants/barters/quests_17_2.yml
-  - Path: npc/re/merchants/barters/refine.yml
-## illusion barter
-  - Path: npc/re/merchants/barters/ill_abyss.yml
-  - Path: npc/re/merchants/barters/ill_frozen.yml
-  - Path: npc/re/merchants/barters/ill_labyrinth.yml
-  - Path: npc/re/merchants/barters/ill_luanda.yml
-  - Path: npc/re/merchants/barters/ill_moonlight.yml
-  - Path: npc/re/merchants/barters/ill_teddy.yml
-  - Path: npc/re/merchants/barters/ill_twins.yml
-  - Path: npc/re/merchants/barters/ill_vampire.yml
-  - Path: npc/re/merchants/barters/ill_underwater.yml
+Body:
+###########################################################################
+##= Illusion of Frozen
+###########################################################################
+  - Name: WEAPON_UP_Frozen
+    Items:
+      - Index: 0
+        Item: Huuma_Flutter_Snow_IL
+        RequiredItems:
+          - Index: 0
+            Item: Huuma_Fluttering_Snow
+            Refine: 9
+          - Index: 1
+            Item: IllusionStone
+            Amount: 100
+          - Index: 2
+            Item: KTULLANUXsEye
+            Amount: 5
+      - Index: 1
+        Item: Combo_Battle_Glove_IL
+        RequiredItems:
+          - Index: 0
+            Item: Combo_Battle_Glove
+            Refine: 9
+          - Index: 1
+            Item: IllusionStone
+            Amount: 100
+          - Index: 2
+            Item: Snowball
+            Amount: 100
+  - Name: ARMOR_UP_Frozen
+    Items:
+      - Index: 0
+        Item: Herald_Of_GOD_IL
+        RequiredItems:
+          - Index: 0
+            Item: Herald_Of_GOD_
+            Refine: 9
+          - Index: 1
+            Item: IllusionStone
+            Amount: 100
+          - Index: 2
+            Item: Spirit_Jewel
+            Amount: 300
+      - Index: 1
+        Item: Illusion_Survivor_Manteau
+        RequiredItems:
+          - Index: 0
+            Item: Clack_Of_Servival
+            Refine: 9
+          - Index: 1
+            Item: IllusionStone
+            Amount: 100
+          - Index: 2
+            Item: Frozen_Stone_Fragment
+            Amount: 200
+      - Index: 2
+        Item: Cap_IL
+        RequiredItems:
+          - Index: 0
+            Item: Cap_
+            Refine: 9
+          - Index: 1
+            Item: IllusionStone
+            Amount: 50
+          - Index: 2
+            Item: Frozen_Stone_Fragment
+            Amount: 100
+  - Name: REFINE_Frozen
+    Items:
+      - Index: 0
+        Item: Frozen_Box_IL
+        RequiredItems:
+          - Index: 0
+            Item: IllusionStone
+            Amount: 50
+      - Index: 1
+        Item: S_Frozen_Box_IL
+        RequiredItems:
+          - Index: 0
+            Item: IllusionStone
+            Amount: 100
