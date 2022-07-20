@@ -5844,15 +5844,6 @@ static void battle_attack_sc_bonus(struct Damage* wd, struct block_list *src, st
 			ATK_ADD(wd->equipAtk, wd->equipAtk2, sc->data[SC_DRUMBATTLE]->val2);
 		if (sc->data[SC_MADNESSCANCEL])
 			ATK_ADD(wd->equipAtk, wd->equipAtk2, 100);
-		if (sc->data[SC_MAGICALBULLET]) {
-			short tmdef = tstatus->mdef + tstatus->mdef2;
-
-			if (sstatus->matk_min > tmdef && sstatus->matk_max > sstatus->matk_min) {
-				ATK_ADD(wd->weaponAtk, wd->weaponAtk2, i64max((sstatus->matk_min + rnd() % (sstatus->matk_max - sstatus->matk_min)) - tmdef, 0));
-			} else {
-				ATK_ADD(wd->weaponAtk, wd->weaponAtk2, i64max(sstatus->matk_min - tmdef, 0));
-			}
-		}
 		if (sc->data[SC_GATLINGFEVER])
 			ATK_ADD(wd->equipAtk, wd->equipAtk2, sc->data[SC_GATLINGFEVER]->val3);
 #else
@@ -6505,6 +6496,17 @@ static void battle_calc_weapon_final_atk_modifiers(struct Damage* wd, struct blo
 				if (enchant_dmg > 0)
 					ATK_ADD(wd->damage, wd->damage2, enchant_dmg);
 			}
+#ifdef RENEWAL
+			if (sc->data[SC_MAGICALBULLET]) {
+				short tmdef = tstatus->mdef + tstatus->mdef2;
+
+				if (sstatus->matk_min > tmdef && sstatus->matk_max > sstatus->matk_min) {
+					ATK_ADD(wd->damage, wd->damage2, i64max((sstatus->matk_min + rnd() % (sstatus->matk_max - sstatus->matk_min)) - tmdef, 0));
+				} else {
+					ATK_ADD(wd->damage, wd->damage2, i64max((int64)sstatus->matk_min - tmdef, 0));
+				}
+			}
+#endif
 		}
 		if (skill_id != SN_SHARPSHOOTING && skill_id != RA_ARROWSTORM)
 			status_change_end(src, SC_CAMOUFLAGE, INVALID_TIMER);
@@ -8092,9 +8094,9 @@ struct Damage battle_calc_magic_attack(struct block_list *src,struct block_list 
 						RE_LVL_DMOD(100);
 						break;
 					case IG_JUDGEMENT_CROSS:
-						skillratio += -100 + 750 * skill_lv + 10 * sstatus->spl;
+						skillratio += -100 + 1950 * skill_lv + 10 * sstatus->spl;
 						if (tstatus->race == RC_PLANT || tstatus->race == RC_INSECT)
-							skillratio += 350 * skill_lv;
+							skillratio += 150 * skill_lv;
 						RE_LVL_DMOD(100);
 						if ((i = pc_checkskill_imperial_guard(sd, 3)) > 0)
 							skillratio += skillratio * i / 100;
