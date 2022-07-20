@@ -993,14 +993,6 @@ enum e_random_item_group {
 	IG_Bs_Item_M_S_54,
 	IG_Bs_Item_M_S_55,
 	IG_Bs_Item_M_S_56,
-
-	IG_ODIN_RELIC,
-
-	IG_BS_ITEM_M_S_52,
-	IG_BS_ITEM_M_S_53,
-	IG_BS_ITEM_M_S_54,
-	IG_BS_ITEM_M_S_55,
-	IG_BS_ITEM_M_S_56,
 	IG_BS_ITEM_M_S_57,
 	IG_BS_ITEM_M_S_58,
 	IG_BS_ITEM_M_S_59,
@@ -1010,7 +1002,8 @@ enum e_random_item_group {
 	IG_MONTHLY_BUFF_PACKAGE,
 	IG_MONTHLY_BATTLE_PACKAGE,
 	IG_MD_AIRBOAT_EXPBOX,
-	IG_ENCHANT_STONE_BOX27,
+
+	IG_ODIN_RELIC,
 
 	IG_MAX,
 };

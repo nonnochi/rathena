@@ -5833,14 +5833,6 @@
 	export_constant(IG_Bs_Item_M_S_54);
 	export_constant(IG_Bs_Item_M_S_55);
 	export_constant(IG_Bs_Item_M_S_56);
-
-	export_constant(IG_ODIN_RELIC);
-
-	export_constant(IG_BS_ITEM_M_S_52);
-	export_constant(IG_BS_ITEM_M_S_53);
-	export_constant(IG_BS_ITEM_M_S_54);
-	export_constant(IG_BS_ITEM_M_S_55);
-	export_constant(IG_BS_ITEM_M_S_56);
 	export_constant(IG_BS_ITEM_M_S_57);
 	export_constant(IG_BS_ITEM_M_S_58);
 	export_constant(IG_BS_ITEM_M_S_59);
@@ -5850,7 +5842,9 @@
 	export_constant(IG_MONTHLY_BUFF_PACKAGE);
 	export_constant(IG_MONTHLY_BATTLE_PACKAGE);
 	export_constant(IG_MD_AIRBOAT_EXPBOX);
-	export_constant(IG_ENCHANT_STONE_BOX27);
+
+	export_constant(IG_ODIN_RELIC);
+
 
 	/* unit stop walking */
 	export_constant(USW_NONE);
