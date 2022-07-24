@@ -1846,6 +1846,7 @@
 
 	export_constant(SC_RUSH_QUAKE1);
 	export_constant(SC_RUSH_QUAKE2);
+
 	// 2021 Mutated Homunculus Skills
 	export_constant(SC_TOXIN_OF_MANDARA);
 	export_constant(SC_GOLDENE_TONE);
@@ -1916,6 +1917,7 @@
 	export_constant(SC_BLESSING_OF_M_CREATURES);
 	export_constant(SC_BLESSING_OF_M_C_DEBUFF);
 
+	export_constant(SC_SUB_WEAPONPROPERTY);
 
 #ifdef RENEWAL
 	export_constant(SC_EXTREMITYFIST2);
