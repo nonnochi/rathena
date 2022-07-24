@@ -3812,43 +3812,6 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 		}
 	}
 
-	// Process and check item combos
-	if (!sd->combos.empty()) {
-		for (const auto &combo : sd->combos) {
-			std::shared_ptr<s_item_combo> item_combo;
-
-			current_equip_item_index = -1;
-			current_equip_combo_pos = combo->pos;
-
-			if (combo->bonus == nullptr || !(item_combo = itemdb_combo.find(combo->id)))
-				continue;
-
-			bool no_run = false;
-			size_t j = 0;
-
-			// Check combo items
-			while (j < item_combo->nameid.size()) {
-				std::shared_ptr<item_data> id = item_db.find(item_combo->nameid[j]);
-
-				// Don't run the script if at least one of combo's pair has restriction
-				if (id && !pc_has_permission(sd, PC_PERM_USE_ALL_EQUIPMENT) && itemdb_isNoEquip(id.get(), sd->bl.m)) {
-					no_run = true;
-					break;
-				}
-
-				j++;
-			}
-
-			if (no_run)
-				continue;
-
-			run_script(combo->bonus, 0, sd->bl.id, 0);
-
-			if (!calculating) // Abort, run_script retriggered this
-				return 1;
-		}
-	}
-
 	// Store equipment script bonuses
 	memcpy(sd->indexed_bonus.param_equip,sd->indexed_bonus.param_bonus,sizeof(sd->indexed_bonus.param_equip));
 	memset(sd->indexed_bonus.param_bonus, 0, sizeof(sd->indexed_bonus.param_bonus));
