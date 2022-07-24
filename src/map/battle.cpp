@@ -897,9 +897,10 @@ int battle_calc_cardfix(int attack_type, struct block_list *src, struct block_li
 											+ (sd->state.arrow_atk ? sd->indexed_bonus.arrow_addclass[tstatus->class_] + sd->indexed_bonus.arrow_addclass[CLASS_ALL] : 0)
 										) / 100;
 				}
-				if( sd->status.weapon == W_KATAR && (skill = pc_checkskill(sd,ASC_KATAR)) > 0 ) // Adv. Katar Mastery functions similar to a +%ATK card on official [helvetica]
-					cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-				
+#ifndef RENEWAL
+					if( sd->status.weapon == W_KATAR && (skill = pc_checkskill(sd,ASC_KATAR)) > 0 ) // Adv. Katar Mastery functions similar to a +%ATK card on official [helvetica]
+						cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
+#endif
 
 				//! CHECKME: These right & left hand weapon ignores 'left_cardfix_to_right'?
 				for (const auto &it : sd->right_weapon.add_dmg) {
@@ -1119,9 +1120,9 @@ bool battle_status_block_damage(struct block_list *src, struct block_list *targe
 	int flag = d->flag;
 
 	// SC Types that must be first because they may or may not block damage
-	if ((sce = sc->data[SC_KYRIE]) && damage > 0) {
+	if ((sce = sc->data[SC_KYRIE]) && damage > 0 && (flag & BF_WEAPON)) {
 		sce->val2 -= static_cast<int>(cap_value(damage, INT_MIN, INT_MAX));
-		if (flag & BF_WEAPON || skill_id == TF_THROWSTONE) {
+		if (skill_id == TF_THROWSTONE) {
 			if (sce->val2 >= 0)
 				damage = 0;
 			else
@@ -4591,12 +4592,14 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 		case RK_HUNDREDSPEAR:
 			skillratio += -100 + 600 + 200 * skill_lv;
 			if (sd)
-				skillratio += 50 * pc_checkskill(sd,LK_SPIRALPIERCE) + 160 * pc_checkskill(sd, DK_DRAGONIC_AURA);
-			RE_LVL_DMOD(100);
+				skillratio += 50 * pc_checkskill(sd,LK_SPIRALPIERCE);
 			if (sc) {
+				if (sc->data[SC_DRAGONIC_AURA])
+					skillratio += sc->data[SC_DRAGONIC_AURA]->val1 * 160;
 				if (sc->data[SC_CHARGINGPIERCE_COUNT] && sc->data[SC_CHARGINGPIERCE_COUNT]->val1 >= 10)
 					skillratio *= 2;
 			}
+			RE_LVL_DMOD(100);
 			break;
 		case RK_WINDCUTTER:
 			if (sd) {
@@ -5465,9 +5468,9 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 		case WH_CRESCIVE_BOLT:
 			skillratio += -100 + 300 * skill_lv + 5 * sstatus->con;
 			RE_LVL_DMOD(100);
-			if (sc) { // At level 10 the SP usage of 100 increased by 20 on each count. So maybe damage increase is 20%??? [Rytech]
+			if (sc) {
 				if (sc->data[SC_CRESCIVEBOLT])
-					skillratio += skillratio * (20 * sc->data[SC_CRESCIVEBOLT]->val1) / 100;
+					skillratio += skillratio * (10 * sc->data[SC_CRESCIVEBOLT]->val1) / 100;
 
 				if (sc->data[SC_CALAMITYGALE]) {
 					skillratio += skillratio * 20 / 100;

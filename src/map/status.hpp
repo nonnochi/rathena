@@ -1230,6 +1230,8 @@ enum sc_type : int16 {
 	SC_S_MANAPOTION,
 	SC_M_DEFSCROLL,
 
+	SC_SUB_WEAPONPROPERTY,
+
 	SC_RUSH_QUAKE1,
 	SC_RUSH_QUAKE2,
 	// 2021 Mutated Homunculus Skills
@@ -1301,8 +1303,6 @@ enum sc_type : int16 {
 	SC_TEMPORARY_COMMUNION,
 	SC_BLESSING_OF_M_CREATURES,
 	SC_BLESSING_OF_M_C_DEBUFF,
-
-	SC_SUB_WEAPONPROPERTY,
 
 #ifdef RENEWAL
 	SC_EXTREMITYFIST2, //! NOTE: This SC should be right before SC_MAX, so it doesn't disturb if RENEWAL is disabled
