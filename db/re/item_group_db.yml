@@ -18003,7 +18003,7 @@ Body:
             Rate: 1
           - Item: Mystic_Bow
             Rate: 2
-  - Group: Splendid_Box2
+  - Group: SPLENDID_BOX2
     SubGroups:
       - SubGroup: 1
         List:
