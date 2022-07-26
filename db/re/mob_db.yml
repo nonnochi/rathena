@@ -96847,8 +96847,8 @@ Body:
         Rate: 1500
       - Item: Rune_Of_Darkness
         Rate: 3000
-      - Item: Odin_itembox
-        Rate: 5
+#      - Item: Odin_itembox
+#        Rate: 5
       - Item: Stone_Of_Intelligence_
         Rate: 100
       - Item: Soft_Feather

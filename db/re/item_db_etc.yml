@@ -35317,7 +35317,7 @@ Body:
       NoMail: true
       NoAuction: true
   - Id: 25256
-    AegisName: Hazy_Dream_Fragment
+    AegisName: HazyDream
     Name: Hazy Dream Fragment
     Type: Etc
     Weight: 10
@@ -35608,7 +35608,7 @@ Body:
     Type: Etc
     Weight: 10
   - Id: 25300
-    AegisName: Ktullanux_Eye
+    AegisName: KTULLANUXsEye
     Name: Ktullanux Eye
     Type: Etc
     Weight: 10
@@ -37820,35 +37820,35 @@ Body:
     Name: Lottery ticket for harvest
     Type: Etc
   - Id: 25892
-    AegisName: aegis_25892
+    AegisName: Abysmal_Clam
     Name: Deep Sea Shell
     Type: Etc
     Weight: 10
     Flags:
       BuyingStore: true
   - Id: 25893
-    AegisName: aegis_25893
+    AegisName: Deepsea_Fish_Tail
     Name: Deep Sea Fish's Tail
     Type: Etc
     Weight: 10
     Flags:
       BuyingStore: true
   - Id: 25894
-    AegisName: aegis_25894
+    AegisName: Rotten_Deepseafish
     Name: Rotten Deep Sea Fish
     Type: Etc
     Weight: 10
     Flags:
       BuyingStore: true
   - Id: 25895
-    AegisName: aegis_25895
+    AegisName: Deep_Sea_Starfish
     Name: Deep Sea Starfish
     Type: Etc
     Weight: 10
     Flags:
       BuyingStore: true
   - Id: 25896
-    AegisName: aegis_25896
+    AegisName: Deep_Sea_Crab
     Name: Deep Sea Crab
     Type: Etc
     Weight: 10
@@ -47371,7 +47371,7 @@ Body:
       bonus2 bMagicAddRace,RC_Fish,50;
       bonus2 bMagicAddRace,RC_Insect,50;
   - Id: 300292
-    AegisName: aegis_300292
+    AegisName: Extra_Joker_Card
     Name: Extra Joker Card
     Type: Card
     Weight: 10
@@ -47387,7 +47387,7 @@ Body:
       if (.@r>=9)
          bonus2 bMagicAddRace,RC_Demon,7;
   - Id: 300293
-    AegisName: aegis_300293
+    AegisName: Erzsebet_Card
     Name: Erzsebet Card
     Type: Card
     Weight: 10
@@ -47399,7 +47399,7 @@ Body:
       bonus2 bSubEle,Ele_Neutral,15;
       bonus2 bMagicAtkEle,Ele_Poison,3*getrefine();
   - Id: 300294
-    AegisName: aegis_300294
+    AegisName: Jeniffer_Card
     Name: Jennifer Card
     Type: Card
     Weight: 10
@@ -47411,7 +47411,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Poison,20;
       bonus2 bMagicAtkEle,Ele_Undead,20;
   - Id: 300295
-    AegisName: aegis_300295
+    AegisName: General_Orc_Card
     Name: Orc General Card
     Type: Card
     Weight: 10
@@ -47431,7 +47431,7 @@ Body:
          bonus2 bMagicAddRace,RC_Player_Doram,7;
       }
   - Id: 300296
-    AegisName: aegis_300296
+    AegisName: Sieglouse_Card
     Name: Sieglouse Card
     Type: Card
     Weight: 10
@@ -47447,7 +47447,7 @@ Body:
       if (.@r>=9)
          bonus2 bMagicAddRace,RC_Insect,7;
   - Id: 300297
-    AegisName: aegis_300297
+    AegisName: Goblin_King_Card
     Name: Goblin King Card
     Type: Card
     Weight: 10

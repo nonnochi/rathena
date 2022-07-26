@@ -7402,7 +7402,7 @@ Body:
       bonus2 bAddRace,RC_DemiHuman,4;
   - Combos:
       - Combo:
-          - Illusion_Immaterial_Sword
+          - Immaterial_Sword_IL
           - Cape_Of_Ancient_Lord_IL
     Script: |
       .@weapon = getequiprefinerycnt(EQI_HAND_R);
@@ -8076,7 +8076,7 @@ Body:
   - Combos:
       - Combo:
           - Illusion_Goibne_Armor
-          - Illusion_Goibne_Helm
+          - Goibne_Helmet_IL
           - Illusion_Goibne_Spaulders
           - Illusion_Goibne's_Greaves
     Script: |

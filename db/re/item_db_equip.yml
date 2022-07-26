@@ -64106,7 +64106,7 @@ Body:
          bonus bHit,5;
       }
   - Id: 13469
-    AegisName: Illusion_Immaterial_Sword
+    AegisName: Immaterial_Sword_IL
     Name: Illusion Immaterial Sword
     Type: Weapon
     SubType: 1hSword
@@ -85430,7 +85430,7 @@ Body:
          bonus2 bMagicAddRace,RC_Formless,min(.@r-10,15);
       }
   - Id: 19366
-    AegisName: Illusion_Goibne_Helm
+    AegisName: Goibne_Helmet_IL
     Name: Illusion Goibne Helm
     Type: Armor
     Weight: 1000
@@ -85836,7 +85836,7 @@ Body:
       if (.@r>=10)
          bonus bIgnoreMdefRace,RC_All;
   - Id: 19428
-    AegisName: Illusion_Morpheus's_Hood
+    AegisName: Morpheus_Hood_IL
     Name: Illusion Morpheus's Hood
     Type: Armor
     Buy: 20
@@ -100398,7 +100398,7 @@ Body:
          bonus bVariableCastrate,-10;
       }
   - Id: 20948
-    AegisName: Illusion_Morpheus's_Shawl
+    AegisName: Morpheus_Shawl_IL
     Name: Illusion Morpheus's Shawl
     Type: Armor
     Buy: 20
@@ -101799,7 +101799,7 @@ Body:
          bonus bUnbreakableWeapon;
       }
   - Id: 21050
-    AegisName: Illusion_Tae_Goo_Lyeon
+    AegisName: Taegoolyeon_IL
     Name: Illusion Tae Goo Lyeon
     Type: Weapon
     SubType: 2hSword
@@ -104758,7 +104758,7 @@ Body:
          bonus bUseSPrate,-5;
       }
   - Id: 22190
-    AegisName: Illusion_Boots
+    AegisName: Boots_IL
     Name: Illusion Boots
     Type: Armor
     Weight: 600
@@ -121720,7 +121720,7 @@ Body:
          }
       }
   - Id: 28254
-    AegisName: Illusion_Butcher
+    AegisName: Butcher_IL
     Name: Illusion Butcher
     Type: Weapon
     SubType: Gatling
@@ -125215,7 +125215,7 @@ Body:
       bonus2 bMagicAddRace,RC_Demon,.@val;
       bonus2 bMagicAddRace,RC_Undead,.@val;
   - Id: 28626
-    AegisName: Illusion_Tablet
+    AegisName: Tablet_IL
     Name: Illusion Tablet
     Type: Weapon
     SubType: Book
@@ -126233,7 +126233,7 @@ Body:
          bonus5 bAutoSpell,"SO_PSYCHIC_WAVE",3,50,BF_WEAPON|BF_SHORT,1;
       }
   - Id: 28745
-    AegisName: Illusion_Counter_Dagger
+    AegisName: Counter_Dagger_IL
     Name: Illusion Counter Dagger
     Type: Weapon
     SubType: Dagger
@@ -138275,7 +138275,7 @@ Body:
          bonus2 bAddSize,Size_Medium,15;
       }
   - Id: 400053
-    AegisName: Morrigane's_Helm_IL
+    AegisName: Morrigane_Helm_IL
     Name: Illusion Morrigane's Helm
     Type: Armor
     View: 257

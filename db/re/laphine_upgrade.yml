@@ -2413,7 +2413,7 @@ Body:
       - Item: Illusion_Gold_Lux
       - Item: Infiltrator_IL
       - Item: Illusion_War_Axe
-      - Item: Illusion_Immaterial_Sword
+      - Item: Immaterial_Sword_IL
       - Item: Illusion_Iron_Driver
       - Item: Illusion_Pole_Axe
       - Item: Book_Of_The_Apo_IL
@@ -2452,7 +2452,7 @@ Body:
       - Item: Illusion_Gold_Lux
       - Item: Infiltrator_IL
       - Item: Illusion_War_Axe
-      - Item: Illusion_Immaterial_Sword
+      - Item: Immaterial_Sword_IL
       - Item: Illusion_Iron_Driver
       - Item: Illusion_Pole_Axe
       - Item: Book_Of_The_Apo_IL
@@ -4305,7 +4305,7 @@ Body:
     TargetItems:
       - Item: Illusion_Wing_Shuriken
       - Item: Illusion_War_Axe
-      - Item: Illusion_Immaterial_Sword
+      - Item: Immaterial_Sword_IL
       - Item: Illusion_Iron_Driver
       - Item: Illusion_Pole_Axe
       - Item: Illusion_Fancy_Flower
@@ -4318,7 +4318,7 @@ Body:
     TargetItems:
       - Item: Illusion_Wing_Shuriken
       - Item: Illusion_War_Axe
-      - Item: Illusion_Immaterial_Sword
+      - Item: Immaterial_Sword_IL
       - Item: Illusion_Iron_Driver
       - Item: Illusion_Pole_Axe
       - Item: Illusion_Fancy_Flower
@@ -4356,7 +4356,7 @@ Body:
       - Item: Illusion_Hunter_Bow
       - Item: Illusion_Tablet
       - Item: Illusion_Goibne_Armor
-      - Item: Illusion_Goibne_Helm
+      - Item: Goibne_Helmet_IL
       - Item: Illusion_Goibne_Spaulders
       - Item: Illusion_Goibne's_Greaves
   - Item: S_Luanda_Box_IL
@@ -4369,7 +4369,7 @@ Body:
       - Item: Illusion_Hunter_Bow
       - Item: Illusion_Tablet
       - Item: Illusion_Goibne_Armor
-      - Item: Illusion_Goibne_Helm
+      - Item: Goibne_Helmet_IL
       - Item: Illusion_Goibne_Spaulders
       - Item: Illusion_Goibne's_Greaves
   - Item: Labyrinth_Box_IL
