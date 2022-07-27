@@ -3555,7 +3555,7 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 	// Give them all modes except these (useful for clones)
 	base_status->mode = static_cast<e_mode>(MD_MASK&~(MD_STATUSIMMUNE|MD_IGNOREMELEE|MD_IGNOREMAGIC|MD_IGNORERANGED|MD_IGNOREMISC|MD_DETECTOR|MD_ANGRY|MD_TARGETWEAK));
 
-	base_status->size = (sd->class_&JOBL_BABY) ? SZ_SMALL : (((sd->class_&MAPID_BASEMASK) == MAPID_SUMMONER) ? battle_config.summoner_size : SZ_MEDIUM);
+	base_status->size = (sd->class_&JOBL_BABY) ? SZ_SMALL : ((sd->class_&MAPID_SUMMONER) == MAPID_SUMMONER ? battle_config.summoner_size : SZ_MEDIUM);
 	if (battle_config.character_size && pc_isriding(sd)) { // [Lupus]
 		if (sd->class_&JOBL_BABY) {
 			if (battle_config.character_size&SZ_BIG)
@@ -3566,7 +3566,7 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 	}
 	base_status->aspd_rate = 1000;
 	base_status->ele_lv = 1;
-	base_status->race = ((sd->class_&MAPID_BASEMASK) == MAPID_SUMMONER) ? battle_config.summoner_race : RC_PLAYER_HUMAN;
+	base_status->race = ((sd->class_&MAPID_SUMMONER) == MAPID_SUMMONER) ? battle_config.summoner_race : RC_PLAYER_HUMAN;
 	base_status->class_ = CLASS_NORMAL;
 
 	sd->autospell.clear();
@@ -3774,43 +3774,6 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 		}
 	}
 
-	// Process and check item combos
-	if (!sd->combos.empty()) {
-		for (const auto &combo : sd->combos) {
-			std::shared_ptr<s_item_combo> item_combo;
-
-			current_equip_item_index = -1;
-			current_equip_combo_pos = combo->pos;
-
-			if (combo->bonus == nullptr || !(item_combo = itemdb_combo.find(combo->id)))
-				continue;
-
-			bool no_run = false;
-			size_t j = 0;
-
-			// Check combo items
-			while (j < item_combo->nameid.size()) {
-				item_data *id = itemdb_exists(item_combo->nameid[j]);
-
-				// Don't run the script if at least one of combo's pair has restriction
-				if (id && !pc_has_permission(sd, PC_PERM_USE_ALL_EQUIPMENT) && itemdb_isNoEquip(id, sd->bl.m)) {
-					no_run = true;
-					break;
-				}
-
-				j++;
-			}
-
-			if (no_run)
-				continue;
-
-			run_script(combo->bonus, 0, sd->bl.id, 0);
-
-			if (!calculating) // Abort, run_script retriggered this
-				return 1;
-		}
-	}
-
 	// Store equipment script bonuses
 	memcpy(sd->indexed_bonus.param_equip,sd->indexed_bonus.param_bonus,sizeof(sd->indexed_bonus.param_equip));
 	memset(sd->indexed_bonus.param_bonus, 0, sizeof(sd->indexed_bonus.param_bonus));
@@ -3830,7 +3793,6 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 
 		if (sd->inventory_data[index]) {
 			int j;
-			struct item_data *data;
 
 			// Card script execution.
 			if (itemdb_isspecial(sd->inventory.u.items_inventory[index].card[0]))
@@ -3840,17 +3802,19 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 				current_equip_card_id= c;
 				if(!c)
 					continue;
-				data = itemdb_exists(c);
+
+				std::shared_ptr<item_data> data = item_db.find(c);
+
 				if(!data)
 					continue;
-				if (opt&SCO_FIRST && data->equip_script && (pc_has_permission(sd,PC_PERM_USE_ALL_EQUIPMENT) || !itemdb_isNoEquip(data,sd->bl.m))) {// Execute equip-script on login
+				if (opt&SCO_FIRST && data->equip_script && (pc_has_permission(sd,PC_PERM_USE_ALL_EQUIPMENT) || !itemdb_isNoEquip(data.get(), sd->bl.m))) {// Execute equip-script on login
 					run_script(data->equip_script,0,sd->bl.id,0);
 					if (!calculating)
 						return 1;
 				}
 				if(!data->script)
 					continue;
-				if(!pc_has_permission(sd,PC_PERM_USE_ALL_EQUIPMENT) && itemdb_isNoEquip(data,sd->bl.m)) // Card restriction checks.
+				if(!pc_has_permission(sd,PC_PERM_USE_ALL_EQUIPMENT) && itemdb_isNoEquip(data.get(), sd->bl.m)) // Card restriction checks.
 					continue;
 				if(i == EQI_HAND_L && sd->inventory.u.items_inventory[index].equip == EQP_HAND_L) { // Left hand status.
 					sd->state.lr_flag = 1;
@@ -3907,7 +3871,8 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 	}
 
 	if (sc->count && sc->data[SC_ITEMSCRIPT]) {
-		struct item_data *data = itemdb_exists(sc->data[SC_ITEMSCRIPT]->val1);
+		std::shared_ptr<item_data> data = item_db.find(sc->data[SC_ITEMSCRIPT]->val1);
+
 		if (data && data->script)
 			run_script(data->script, 0, sd->bl.id, 0);
 	}
@@ -4383,15 +4348,14 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 		sd->indexed_bonus.subele[ELE_FIRE] += skill*5;
 	}
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0) {
+		sd->right_weapon.addrace[RC_DRAGON]+=skill*4;
+		sd->left_weapon.addrace[RC_DRAGON]+=skill*4;
 #ifdef RENEWAL
-		skill = skill * 2;
+		sd->indexed_bonus.magic_addrace[RC_DRAGON]+=skill*2;
 #else
-		skill = skill * 4;
+		sd->indexed_bonus.magic_addrace[RC_DRAGON]+=skill*4;
 #endif
-		sd->right_weapon.addrace[RC_DRAGON]+=skill;
-		sd->left_weapon.addrace[RC_DRAGON]+=skill;
-		sd->indexed_bonus.magic_addrace[RC_DRAGON]+=skill;
-		sd->indexed_bonus.subrace[RC_DRAGON]+=skill;
+		sd->indexed_bonus.subrace[RC_DRAGON]+=skill*4;
 	}
 	if ((skill = pc_checkskill(sd, AB_EUCHARISTICA)) > 0) {
 		sd->right_weapon.addrace[RC_DEMON] += skill;
@@ -12123,7 +12087,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 		case SC_ARCLOUSEDASH:
 			val2 = 15 + 5 * val1; // AGI
 			val3 = 25; // Move speed increase
-			if (sd && (sd->class_&MAPID_BASEMASK) == MAPID_SUMMONER)
+			if (sd && (sd->class_&MAPID_SUMMONER) == MAPID_SUMMONER)
 				val4 = 10; // Ranged ATK increase
 			break;
 		case SC_SHRIMP:
@@ -12478,6 +12442,16 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 			break;
 		case SC_DEEP_POISONING_OPTION:
 			val3 = ELE_POISON;
+			break;
+		case SC_SUB_WEAPONPROPERTY:
+			if (sd && val3 == ASC_EDP) {
+				uint16 poison_level = pc_checkskill(sd, GC_RESEARCHNEWPOISON);
+
+				if (poison_level > 0) {
+					tick += 30000; // Base of 30 seconds
+					tick += poison_level * 15 * 1000; // Additional 15 seconds per level
+				}
+			}
 			break;
 		case SC_TALISMAN_OF_PROTECTION:
 			val2 = 2 * val1;
@@ -15808,7 +15782,7 @@ void StatusDatabase::loadingFinished(){
 		}
 	}
 
-	TypesafeYamlDatabase::loadingFinished();
+	TypesafeCachedYamlDatabase::loadingFinished();
 }
 
 StatusDatabase status_db;

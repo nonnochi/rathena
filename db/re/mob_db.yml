@@ -90216,7 +90216,7 @@ Body:
         Rate: 100
       - Item: Bradium
         Rate: 200
-      - Item: Ktullanux_Eye
+      - Item: KTULLANUXsEye
         Rate: 5
   - Id: 3793
     AegisName: ILL_SNOWIER
@@ -90344,8 +90344,65 @@ Body:
         Rate: 500
       - Item: Frozen_Stone_Fragment
         Rate: 500
-#  - Id: 3796
-#    AegisName: ILL_KTULLANUX
+  - Id: 3796
+    AegisName: ILL_KTULLANUX
+    Name: Awaken Ktullanux
+    Level: 135
+    Hp: 13521442
+    BaseExp: 2777284
+    JobExp: 1937023
+    MvpExp: 100000
+    Attack: 2175
+    Attack2: 3784
+    Defense: 129
+    MagicDefense: 78
+    Str: 125
+    Agi: 156
+    Vit: 70
+    Int: 165
+    Dex: 262
+    Luk: 142
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Brute
+    Element: Water
+    ElementLevel: 4
+    WalkSpeed: 400
+    AttackDelay: 432
+    AttackMotion: 840
+    DamageMotion: 216
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Yggdrasilberry
+        Rate: 10000
+      - Item: Bs_Making_S
+        Rate: 5000
+      - Item: KTULLANUXsEye
+        Rate: 5000
+    Drops:
+      - Item: Old_Card_Album
+        Rate: 1000
+      - Item: Huuma_Fluttering_Snow
+        Rate: 1000
+        RandomOptionGroup: AS_WEAPON_4
+      - Item: KTULLANUXsEye
+        Rate: 10000
+      - Item: Clack_Of_Servival
+        Rate: 1000
+      - Item: Herald_Of_GOD
+        Rate: 1000
+      - Item: AwakenKtullanux_Card
+        Rate: 1
+        StealProtected: true
 #  - Id: 3797
 #    AegisName: ILL_FROZEN_KN
 #  - Id: 3798
@@ -90581,8 +90638,71 @@ Body:
         Rate: 300
       - Item: Rotten_Meat
         Rate: 1000
-#  - Id: 3804
-#    AegisName: ILL_TURTLE_GENERAL
+  - Id: 3804
+    AegisName: ILL_TURTLE_GENERAL
+    Name: Ominous Turtle General
+    Level: 165
+    Hp: 11628549
+    BaseExp: 3431854
+    JobExp: 2146800
+    Attack: 5512
+    Attack2: 8069
+    Defense: 796
+    MagicDefense: 246
+    Str: 232
+    Agi: 246
+    Vit: 302
+    Int: 189
+    Dex: 424
+    Luk: 180
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Brute
+    Element: Earth
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 900
+    AttackMotion: 1000
+    DamageMotion: 500
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Yggdrasilberry
+        Rate: 10000
+      - Item: IllusionStone
+        Rate: 500
+      - Item: Bs_Making_S
+        Rate: 5000
+    Drops:
+      - Item: Ominous_Turtle_General_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Illusion_Iron_Driver
+        Rate: 4
+        RandomOptionGroup: AS_WEAPON_3
+      - Item: Illusion_War_Axe
+        Rate: 3
+      - Item: Cookbook09
+        Rate: 100
+      - Item: Illusion_Pole_Axe
+        Rate: 5
+      - Item: Broken_Shell
+        Rate: 2668
+      - Item: Immaterial_Sword_IL
+        Rate: 40
+        RandomOptionGroup: AS_WEAPON_3
+      - Item: Union_Of_Tribe
+        Rate: 1
+      - Item: ShipsLog
+        Rate: 10000
 #  - Id: 3805
 #    AegisName: E_HAPPY_EGG
 #  - Id: 3806
@@ -91758,9 +91878,7 @@ Body:
     AttackMotion: 780
     DamageMotion: 504
     Ai: 20
-    Drops:
-      - Item: Bearopy
-        Rate: 300
+    Drops:     
       - Item: Iron_Ore
         Rate: 2000
       - Item: NasariansSoulstone
@@ -91802,8 +91920,6 @@ Body:
     DamageMotion: 504
     Ai: 20
     Drops:
-      - Item: Bearopy
-        Rate: 300
       - Item: Screw
         Rate: 3800
       - Item: NasariansSoulstone
@@ -91847,8 +91963,6 @@ Body:
     DamageMotion: 504
     Ai: 20
     Drops:
-      - Item: Bearopy
-        Rate: 300
       - Item: Green_Herb
         Rate: 1000
       - Item: NasariansSoulstone
@@ -91890,8 +92004,6 @@ Body:
     DamageMotion: 504
     Ai: 20
     Drops:
-      - Item: Bearopy
-        Rate: 300
       - Item: Oridecon_Hammer
         Rate: 300
       - Item: NasariansSoulstone
@@ -91937,8 +92049,6 @@ Body:
     Drops:
       - Item: Iron
         Rate: 3800
-      - Item: Bearopy
-        Rate: 300
       - Item: NasariansSoulstone
         Rate: 500
       - Item: Colorful_Teddy_Bear_Card
@@ -92125,16 +92235,151 @@ Body:
       - Item: Haunted_Obsidian_Card
         Rate: 1
         StealProtected: true
-#  - Id: 20264
-#    AegisName: G_ILL_TEDDY_BEAR_R
-#  - Id: 20265
-#    AegisName: G_ILL_TEDDY_BEAR_Y
-#  - Id: 20266
-#    AegisName: G_ILL_TEDDY_BEAR_G
-#  - Id: 20267
-#    AegisName: G_ILL_TEDDY_BEAR_W
-#  - Id: 20268
-#    AegisName: G_ILL_TEDDY_BEAR_B
+  - Id: 20264
+    AegisName: G_ILL_TEDDY_BEAR_R
+    Name: Red Teddy Bear
+    Level: 155
+    Hp: 328072
+    Attack: 2597
+    Attack2: 3752
+    Defense: 212
+    MagicDefense: 88
+    Str: 132
+    Agi: 100
+    Vit: 155
+    Int: 132
+    Dex: 133
+    Luk: 132
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    RaceGroups:
+      Clocktower: true
+    Element: Fire
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 512
+    AttackMotion: 780
+    DamageMotion: 504
+    Ai: 20
+  - Id: 20265
+    AegisName: G_ILL_TEDDY_BEAR_Y
+    Name: Yellow Teddy Bear
+    Level: 155
+    Hp: 294044
+    Attack: 2336
+    Attack2: 3375
+    Defense: 200
+    MagicDefense: 112
+    Str: 102
+    Agi: 132
+    Vit: 102
+    Int: 182
+    Dex: 155
+    Luk: 102
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    RaceGroups:
+      Clocktower: true
+    Element: Wind
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 512
+    AttackMotion: 780
+    DamageMotion: 504
+    Ai: 20
+  - Id: 20266
+    AegisName: G_ILL_TEDDY_BEAR_G
+    Name: Green Teddy Bear
+    Level: 157
+    Hp: 331960
+    Attack: 2700
+    Attack2: 3907
+    Defense: 227
+    MagicDefense: 110
+    Str: 129
+    Agi: 128
+    Vit: 141
+    Int: 173
+    Dex: 158
+    Luk: 129
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    RaceGroups:
+      Clocktower: true
+    Element: Poison
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 512
+    AttackMotion: 780
+    DamageMotion: 504
+    Ai: 20
+  - Id: 20267
+    AegisName: G_ILL_TEDDY_BEAR_W
+    Name: White Teddy Bear
+    Level: 155
+    Hp: 311841
+    Attack: 2544
+    Attack2: 3678
+    Defense: 213
+    MagicDefense: 103
+    Str: 121
+    Agi: 120
+    Vit: 133
+    Int: 162
+    Dex: 149
+    Luk: 121
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    RaceGroups:
+      Clocktower: true
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 512
+    AttackMotion: 780
+    DamageMotion: 504
+    Ai: 20
+  - Id: 20268
+    AegisName: G_ILL_TEDDY_BEAR_B
+    Name: Blue Teddy Bear
+    Level: 152
+    Hp: 280657
+    Attack: 2302
+    Attack2: 3323
+    Defense: 192
+    MagicDefense: 93
+    Str: 109
+    Agi: 108
+    Vit: 120
+    Int: 146
+    Dex: 134
+    Luk: 109
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    RaceGroups:
+      Clocktower: true
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 200
+    AttackDelay: 512
+    AttackMotion: 780
+    DamageMotion: 504
+    Ai: 20
   - Id: 20269
     AegisName: GUILD_SKILL_FLAG
     Name: Guild Skill Flag
@@ -92299,22 +92544,352 @@ Body:
         Rate: 400
       - Item: Fragment_Of_Rock
         Rate: 5
-#  - Id: 20273
-#    AegisName: ILL_TAO_GUNKA
-#  - Id: 20274
-#    AegisName: ILL_STONE_SHOOTER
-#  - Id: 20275
-#    AegisName: ILL_WOOTAN_SHOOTER
-#  - Id: 20276
-#    AegisName: ILL_WOOTAN_FIGHTER
-#  - Id: 20277
-#    AegisName: ILL_WOOTAN_DEFENDER
-#  - Id: 20278
-#    AegisName: G_ILL_MEGALITH
-#  - Id: 20279
-#    AegisName: G_ILL_WOOTAN_SHOOTER
-#  - Id: 20280
-#    AegisName: G_ILL_WOOTAN_FIGHTER
+  - Id: 20273
+    AegisName: ILL_TAO_GUNKA
+    Name: Ancient Tao Gunka
+    Level: 169
+    Hp: 19280000
+    BaseExp: 4001752
+    JobExp: 3001314
+    MvpExp: 2450000
+    Attack: 6081
+    Attack2: 8914
+    Defense: 905
+    MagicDefense: 143
+    Str: 245
+    Agi: 216
+    Vit: 100
+    Int: 111
+    Dex: 212
+    Luk: 42
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demon
+    Element: Neutral
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 1020
+    AttackMotion: 288
+    DamageMotion: 144
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Bs_Making_S
+        Rate: 5000
+    Drops:
+      - Item: Gemstone
+        Rate: 4850
+      - Item: Stone_Piece
+        Rate: 4850
+      - Item: Golden_Jewel
+        Rate: 1000
+      - Item: Goibne's_Armor
+        Rate: 400
+      - Item: Token_Of_Bigstone
+        Rate: 750
+      - Item: Goibne's_Shoulder_Arms
+        Rate: 100
+      - Item: Ancient_Tao_Gunka_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Fragment_Of_Rock
+        Rate: 10000
+  - Id: 20274
+    AegisName: ILL_STONE_SHOOTER
+    Name: Ancient Stone Shooter
+    Level: 166
+    Hp: 292500
+    BaseExp: 625621
+    JobExp: 256716
+    Attack: 3997
+    Attack2: 5828
+    Defense: 184
+    MagicDefense: 15
+    Str: 170
+    Agi: 86
+    Vit: 68
+    Int: 44
+    Dex: 215
+    Luk: 54
+    AttackRange: 10
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Fire
+    ElementLevel: 3
+    WalkSpeed: 175
+    AttackDelay: 2413
+    AttackMotion: 1248
+    DamageMotion: 768
+    Ai: 04
+    Drops:
+      - Item: Solid_Twig
+        Rate: 5000
+      - Item: Log
+        Rate: 5000
+      - Item: Browny_Root
+        Rate: 1000
+      - Item: Wooden_Block
+        Rate: 2000
+      - Item: Oridecon_Stone
+        Rate: 100
+      - Item: Hair_Leaf
+        Rate: 300
+      - Item: Ancient_Stone_Shooter_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Token_Of_Wootan
+        Rate: 750
+  - Id: 20275
+    AegisName: ILL_WOOTAN_SHOOTER
+    Name: Ancient Wootan Shooter
+    Level: 164
+    Hp: 702100
+    BaseExp: 656669
+    JobExp: 257502
+    Attack: 4117
+    Attack2: 6008
+    Defense: 142
+    MagicDefense: 21
+    Str: 171
+    Agi: 97
+    Vit: 74
+    Int: 53
+    Dex: 220
+    Luk: 45
+    AttackRange: 10
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Earth
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 857
+    AttackMotion: 1056
+    DamageMotion: 576
+    Ai: 04
+    Drops:
+      - Item: Air_Rifle
+        Rate: 4500
+      - Item: Flexible_String
+        Rate: 3500
+      - Item: Token_Of_Wootan
+        Rate: 750
+      - Item: Stone
+        Rate: 1000
+      - Item: Elder_Branch
+        Rate: 100
+      - Item: Cacao
+        Rate: 100
+      - Item: Hunter_Bow_
+        Rate: 10
+      - Item: Ancient_Wootan_Shooter_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Shooting_Stone
+        Rate: 500
+  - Id: 20276
+    AegisName: ILL_WOOTAN_FIGHTER
+    Name: Ancient Wootan Fighter
+    Level: 167
+    Hp: 725500
+    BaseExp: 657225
+    JobExp: 259418
+    Attack: 4007
+    Attack2: 5828
+    Defense: 205
+    MagicDefense: 8
+    Str: 198
+    Agi: 115
+    Vit: 90
+    Int: 42
+    Dex: 158
+    Luk: 42
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 912
+    AttackMotion: 1344
+    DamageMotion: 480
+    Ai: 04
+    Drops:
+      - Item: Banana
+        Rate: 4500
+      - Item: Shoulder_Protection
+        Rate: 4000
+      - Item: Wootan_F_Fur
+        Rate: 500
+      - Item: Wootan_D_S_Piece
+        Rate: 5
+      - Item: Elder_Branch
+        Rate: 100
+      - Item: Great_Leaf
+        Rate: 1000
+      - Item: Banana_Hat
+        Rate: 5
+      - Item: Ancient_Wootan_Fighter_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Hard_Mud
+        Rate: 500
+  - Id: 20277
+    AegisName: ILL_WOOTAN_DEFENDER
+    Name: Ancient Wootan Defender
+    Level: 169
+    Hp: 20154000
+    BaseExp: 3001552
+    JobExp: 2001164
+    MvpExp: 2001552
+    Attack: 6225
+    Attack2: 9143
+    Defense: 874
+    MagicDefense: 143
+    Str: 220
+    Agi: 198
+    Vit: 102
+    Int: 105
+    Dex: 215
+    Luk: 165
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 4
+    WalkSpeed: 200
+    AttackDelay: 912
+    AttackMotion: 1344
+    DamageMotion: 480
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Wootan_D_S_Piece
+        Rate: 5000
+      - Item: Yggdrasilberry
+        Rate: 5000
+      - Item: Bs_Making_S
+        Rate: 5000
+    Drops:
+      - Item: Token_Of_Wootan
+        Rate: 750
+      - Item: Shoulder_Protection
+        Rate: 4000
+      - Item: Wootan_D_S_Piece
+        Rate: 10000
+      - Item: Elder_Branch
+        Rate: 100
+      - Item: Great_Leaf
+        Rate: 1000
+      - Item: Goibne's_Helmet
+        Rate: 500
+      - Item: Ancient_Wootan_Defender_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Goibne's_Combat_Boots
+        Rate: 500
+  - Id: 20278
+    AegisName: G_ILL_MEGALITH
+    Name: Ancient Megalith
+    Level: 166
+    Hp: 708500
+    Attack: 4091
+    Attack2: 5969
+    Defense: 188
+    MagicDefense: 18
+    Str: 169
+    Agi: 111
+    Vit: 89
+    Int: 55
+    Dex: 214
+    Luk: 42
+    AttackRange: 9
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 4
+    WalkSpeed: 200
+    AttackDelay: 1332
+    AttackMotion: 1332
+    DamageMotion: 672
+    Ai: 10
+  - Id: 20279
+    AegisName: G_ILL_WOOTAN_SHOOTER
+    Name: Ancient Wootan Shooter
+    Level: 164
+    Hp: 702100
+    Attack: 4117
+    Attack2: 6008
+    Defense: 142
+    MagicDefense: 21
+    Str: 171
+    Agi: 97
+    Vit: 74
+    Int: 53
+    Dex: 220
+    Luk: 45
+    AttackRange: 10
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Earth
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 857
+    AttackMotion: 1056
+    DamageMotion: 576
+    Ai: 04
+  - Id: 20280
+    AegisName: G_ILL_WOOTAN_FIGHTER
+    Name: Ancient Wootan Fighter
+    Level: 167
+    Hp: 725500
+    Attack: 4007
+    Attack2: 5828
+    Defense: 205
+    MagicDefense: 8
+    Str: 198
+    Agi: 115
+    Vit: 90
+    Int: 42
+    Dex: 158
+    Luk: 42
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 912
+    AttackMotion: 1344
+    DamageMotion: 480
+    Ai: 04
 #  - Id: 20281
 #    AegisName: E_DANDY_STAR
 #  - Id: 20282
@@ -94280,8 +94855,61 @@ Body:
 #    AegisName: E_MD_LUDE
 #  - Id: 20519
 #    AegisName: E_MD_JACK_GAINT
-#  - Id: 20520
-#    AegisName: ILL_BAPHOMET
+  - Id: 20520
+    AegisName: ILL_BAPHOMET
+    Name: Chaotic Baphomet
+    Level: 178
+    Hp: 21278744
+    BaseExp: 3404599
+    JobExp: 2383219
+    MvpExp: 1982620
+    Attack: 7150
+    Attack2: 3984
+    Defense: 343
+    MagicDefense: 122
+    Str: 276
+    Agi: 188
+    Vit: 55
+    Int: 267
+    Dex: 244
+    Luk: 99
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demon
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 100
+    AttackDelay: 768
+    AttackMotion: 768
+    DamageMotion: 576
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Mvp: true
+    MvpDrops:
+      - Item: Bs_Making_S
+        Rate: 5000
+      - Item: Baphomet_Doll
+        Rate: 500
+      - Item: Evil_Horn
+        Rate: 5000
+    Drops:
+      - Item: Chaotic_Baphomet_Card
+        Rate: 1
+        StealProtected: true
+      - Item: Essence_Of_Demon
+        Rate: 10000
+      - Item: Crescent_Scythe
+        Rate: 400
+      - Item: Crescent_Scythe_
+        Rate: 50
+      - Item: Magestic_Goat
+        Rate: 300
+      - Item: Magestic_Goat_
+        Rate: 10
   - Id: 20521
     AegisName: ILL_ANDREA
     Name: Chaotic Andrea
@@ -94797,8 +95425,37 @@ Body:
         Rate: 5
       - Item: White_Herb
         Rate: 1800
-#  - Id: 20533
-#    AegisName: G_ILL_BAPHOMET_J
+  - Id: 20533
+    AegisName: G_ILL_BAPHOMET_J
+    Name: Chaotic Baphomet Jr.
+    Level: 177
+    Hp: 1057444
+    Attack: 6445
+    Attack2: 1700
+    Defense: 70
+    MagicDefense: 25
+    Str: 185
+    Agi: 101
+    Vit: 50
+    Int: 158
+    Dex: 178
+    Luk: 77
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Demon
+    RaceGroups:
+      Clocktower: true
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 100
+    AttackDelay: 868
+    AttackMotion: 480
+    DamageMotion: 120
+    Ai: 21
+    Modes:
+      Detector: true
   - Id: 20534
     AegisName: G_REGINLEIF
     Name: Valkyrie
@@ -94859,22 +95516,262 @@ Body:
     Class: Boss
     Modes:
       NoRandomWalk: true
-#  - Id: 20536
-#    AegisName: MD_ED_B_YGNIZEM
-#  - Id: 20537
-#    AegisName: MD_ED_YGNIZEM
-#  - Id: 20538
-#    AegisName: MD_ED_EREND
-#  - Id: 20539
-#    AegisName: MD_ED_ARMAIA
+  - Id: 20536
+    AegisName: MD_ED_B_YGNIZEM
+    Name: Nameless Swordsman
+    Level: 180
+    Hp: 75000000
+    Sp: 0
+    BaseExp: 20000000
+    JobExp: 12000000
+    MvpExp: 27000000
+    Attack: 5030
+    Attack2: 7310
+    Defense: 585
+    MagicDefense: 235
+    Str: 290
+    Agi: 224
+    Vit: 254
+    Int: 219
+    Dex: 429
+    Luk: 186
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Class: Boss
+    Modes:
+      Mvp: true
+  - Id: 20537
+    AegisName: MD_ED_YGNIZEM
+    Name: Nameless Swordsman
+    Level: 176
+    Hp: 1519762
+    Sp: 0
+    BaseExp: 8289600
+    JobExp: 5802720
+    Attack: 4422
+    Attack2: 6422
+    Defense: 340
+    MagicDefense: 109
+    Str: 246
+    Agi: 207
+    Vit: 216
+    Int: 186
+    Dex: 364
+    Luk: 129
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Drops:
+      - Item: Lab_Staff_Record
+        Rate: 10000
+      - Item: Silent_Energy_Particle
+        Rate: 3000
+      - Item: Weak_Energy_Particle
+        Rate: 1500
+  - Id: 20538
+    AegisName: MD_ED_EREND
+    Name: Nameless Acolyte
+    Level: 176
+    Hp: 1500486
+    Sp: 0
+    BaseExp: 5453600
+    JobExp: 3817520
+    Attack: 3085
+    Attack2: 4485
+    Defense: 278
+    MagicDefense: 113
+    Str: 109
+    Agi: 81
+    Vit: 127
+    Int: 205
+    Dex: 185
+    Luk: 81
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demihuman
+    Element: Holy
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Drops:
+      - Item: Lab_Staff_Record
+        Rate: 10000
+      - Item: Particles_Of_Energy
+        Rate: 150
+      - Item: Silent_Energy_Particle
+        Rate: 3000
+  - Id: 20539
+    AegisName: MD_ED_ARMAIA
+    Name: Nameless Merchant
+    Level: 175
+    Hp: 1507840
+    Sp: 0
+    BaseExp: 5764080
+    JobExp: 4034840
+    Attack: 3951
+    Attack2: 5751
+    Defense: 397
+    MagicDefense: 103
+    Str: 176
+    Agi: 73
+    Vit: 121
+    Int: 83
+    Dex: 206
+    Luk: 81
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Drops:
+      - Item: Silent_Energy_Particle
+        Rate: 3000
+      - Item: Lab_Staff_Record
+        Rate: 10000
 #  - Id: 20540
 #    AegisName: MD_ED_EREMES
-#  - Id: 20541
-#    AegisName: MD_ED_LGTHIGHGUARD
-#  - Id: 20542
-#    AegisName: MD_ED_LGTGUARD
-#  - Id: 20543
-#    AegisName: MD_ED_M_SCIENCE
+  - Id: 20541
+    AegisName: MD_ED_LGTHIGHGUARD
+    Name: Rekenber Senior Guard
+    Level: 174
+    Hp: 1475486
+    Sp: 0
+    BaseExp: 5402720
+    JobExp: 3781880
+    Attack: 3161
+    Attack2: 4561
+    Defense: 339
+    MagicDefense: 98
+    Str: 187
+    Agi: 218
+    Vit: 87
+    Int: 110
+    Dex: 251
+    Luk: 106
+    AttackRange: 9
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Small
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Drops:
+      - Item: Seed_Of_Yggdrasil
+        Rate: 1500
+      - Item: Lab_Staff_Record
+        Rate: 10000
+      - Item: Yggdrasilberry
+        Rate: 750
+  - Id: 20542
+    AegisName: MD_ED_LGTGUARD
+    Name: Rekenber Guard
+    Level: 176
+    Hp: 1475486
+    Sp: 0
+    BaseExp: 7600920
+    JobExp: 5320640
+    Attack: 3057
+    Attack2: 4409
+    Defense: 346
+    MagicDefense: 96
+    Str: 207
+    Agi: 100
+    Vit: 75
+    Int: 110
+    Dex: 251
+    Luk: 88
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Drops:
+      - Item: Yggdrasilberry
+        Rate: 750
+      - Item: Lab_Staff_Record
+        Rate: 10000
+      - Item: Seed_Of_Yggdrasil
+        Rate: 1500
+  - Id: 20543
+    AegisName: MD_ED_M_SCIENCE
+    Name: Rengenschirm Scientist
+    Level: 172
+    Hp: 1469107
+    Sp: 0
+    BaseExp: 5342160
+    JobExp: 373952
+    Attack: 2950
+    Attack2: 4292
+    Defense: 346
+    MagicDefense: 96
+    Str: 94
+    Agi: 96
+    Vit: 91
+    Int: 277
+    Dex: 236
+    Luk: 74
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 145
+    AttackDelay: 576
+    AttackMotion: 432
+    DamageMotion: 288
+    Ai: 04
+    Drops:
+      - Item: Seed_Of_Yggdrasil
+        Rate: 1500
+      - Item: Lab_Staff_Record
+        Rate: 10000
+      - Item: Yggdrasilberry
+        Rate: 750
 #  - Id: 20544
 #    AegisName: MINERAL_R_MJ
 #  - Id: 20545
@@ -94931,34 +95828,441 @@ Body:
 #    AegisName: SAECOM
 #  - Id: 20571
 #    AegisName: ORK_HERO2
-#  - Id: 20572
-#    AegisName: MD_C_HEMEL
-#  - Id: 20573
-#    AegisName: MD_C_AMDARAIS
-#  - Id: 20574
-#    AegisName: MD_C_WHITEKNIGHT
-#  - Id: 20575
-#    AegisName: MD_C_CORRUPTION_ROOT
-#  - Id: 20576
-#    AegisName: MD_C_KHALITZBURG
-#  - Id: 20577
-#    AegisName: MD_C_RAYDRIC
-#  - Id: 20578
-#    AegisName: MD_C_RAYDRIC_ARCHER
-#  - Id: 20579
-#    AegisName: MD_C_ZOMBIE
-#  - Id: 20580
-#    AegisName: MD_C_GHOUL
-#  - Id: 20581
-#    AegisName: MD_C_THORN
+  - Id: 20572
+    AegisName: MD_C_HEMEL
+    Name: Phantom Himmelmez's
+    Level: 195
+    Hp: 450000000
+    Attack: 10290
+    Attack2: 12900
+    Defense: 646
+    MagicDefense: 97
+    Str: 297
+    Agi: 139
+    Vit: 211
+    Int: 574
+    Dex: 352
+    Luk: 45
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demon
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 130
+    AttackDelay: 312
+    AttackMotion: 1000
+    DamageMotion: 432
+    Ai: 04
+    Class: Boss
+    Modes:
+      CastSensorChase: true
+      CastSensorIdle: true
+      ChangeChase: true
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Bs_Making_S
+        Rate: 10000
+    Drops:
+      - Item: C_Himel_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20573
+    AegisName: MD_C_AMDARAIS
+    Name: Amdarais's Phantom
+    Level: 192
+    Hp: 450000000
+    Attack: 6290
+    Attack2: 8947
+    Defense: 446
+    MagicDefense: 82
+    Str: 597
+    Agi: 99
+    Vit: 211
+    Int: 374
+    Dex: 352
+    Luk: 45
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demon
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 130
+    AttackDelay: 312
+    AttackMotion: 1000
+    DamageMotion: 432
+    Ai: 04
+    Class: Boss
+    Modes:
+      CastSensorChase: true
+      CastSensorIdle: true
+      ChangeChase: true
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Bs_Making_S
+        Rate: 10000
+    Drops:
+      - Item: C_Amdarais_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20574
+    AegisName: MD_C_WHITEKNIGHT
+    Name: Mutated White Knight
+    Level: 188
+    Hp: 2450483
+    Attack: 4734
+    Attack2: 5680
+    Defense: 802
+    MagicDefense: 77
+    Str: 291
+    Agi: 105
+    Vit: 128
+    Int: 100
+    Dex: 187
+    Luk: 57
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Undead
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 1500
+    AttackMotion: 500
+    DamageMotion: 468
+    Ai: 21
+    Drops:
+      - Item: C_White_Knight_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20575
+    AegisName: MD_C_CORRUPTION_ROOT
+    Name: Prime Corruption Root
+    Level: 190
+    Hp: 182000000
+    Attack: 6887
+    Attack2: 6900
+    Defense: 667
+    MagicDefense: 98
+    Str: 311
+    Agi: 20
+    Vit: 90
+    Int: 201
+    Dex: 201
+    Luk: 20
+    AttackRange: 9
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demon
+    Element: Earth
+    ElementLevel: 3
+    WalkSpeed: 1000
+    AttackDelay: 576
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 10
+    Class: Boss
+    Modes:
+      Mvp: true
+    Drops:
+      - Item: C_CorruptionRoot_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20576
+    AegisName: MD_C_KHALITZBURG
+    Name: Mutated Khalitzburg
+    Level: 185
+    Hp: 2401358
+    Attack: 3711
+    Attack2: 4414
+    Defense: 671
+    MagicDefense: 85
+    Str: 251
+    Agi: 192
+    Vit: 95
+    Int: 121
+    Dex: 155
+    Luk: 52
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Undead
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 528
+    AttackMotion: 528
+    DamageMotion: 468
+    Ai: 05
+    Modes:
+      CastSensorChase: true
+      ChangeChase: true
+      ChangeTargetMelee: true
+    Drops:
+      - Item: C_Khaliz_Knight_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20577
+    AegisName: MD_C_RAYDRIC
+    Name: Mutated Raydric
+    Level: 182
+    Hp: 2362114
+    Attack: 4531
+    Attack2: 5325
+    Defense: 665
+    MagicDefense: 77
+    Str: 144
+    Agi: 134
+    Vit: 103
+    Int: 67
+    Dex: 148
+    Luk: 45
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 100
+    AttackDelay: 824
+    AttackMotion: 720
+    DamageMotion: 410
+    Ai: 05
+    Modes:
+      Detector: true
+    Drops:
+      - Item: C_Raydric_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20578
+    AegisName: MD_C_RAYDRIC_ARCHER
+    Name: Mutated Raydric Archer
+    Level: 184
+    Hp: 2355718
+    Attack: 5415
+    Attack2: 5530
+    Defense: 463
+    MagicDefense: 104
+    Str: 191
+    Agi: 193
+    Vit: 156
+    Int: 152
+    Dex: 347
+    Luk: 177
+    AttackRange: 9
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 1152
+    AttackMotion: 1152
+    DamageMotion: 480
+    Ai: 04
+    Modes:
+      CastSensorIdle: true
+      Detector: true
+    Drops:
+      - Item: C_Raydric_Archer_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20579
+    AegisName: MD_C_ZOMBIE
+    Name: Mutated Zombie
+    Level: 191
+    Hp: 2355718
+    Attack: 5415
+    Attack2: 5530
+    Defense: 463
+    MagicDefense: 104
+    Str: 248
+    Agi: 193
+    Vit: 156
+    Int: 158
+    Dex: 347
+    Luk: 177
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 1152
+    AttackMotion: 1152
+    DamageMotion: 480
+    Ai: 04
+    Modes:
+      CastSensorIdle: true
+      Detector: true
+  - Id: 20580
+    AegisName: MD_C_GHOUL
+    Name: Mutated Ghoul
+    Level: 191
+    Hp: 2355718
+    Attack: 5415
+    Attack2: 5530
+    Defense: 463
+    MagicDefense: 104
+    Str: 248
+    Agi: 193
+    Vit: 156
+    Int: 158
+    Dex: 347
+    Luk: 177
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 1152
+    AttackMotion: 1152
+    DamageMotion: 480
+    Ai: 04
+    Modes:
+      CastSensorIdle: true
+      Detector: true
+  - Id: 20581
+    AegisName: MD_C_THORN
+    Name: Mutated Thorn
+    Level: 89
+    Hp: 10
+    Attack: 4244
+    Attack2: 680
+    Defense: 71
+    MagicDefense: 66
+    Agi: 51
+    Vit: 99
+    Int: 351
+    Dex: 150
+    Luk: 30
+    AttackRange: 12
+    SkillRange: 14
+    ChaseRange: 16
+    Size: Small
+    Race: Demon
+    Element: Undead
+    ElementLevel: 4
+    AttackDelay: 2864
+    AttackMotion: 288
+    DamageMotion: 576
+    Class: Boss
+    Modes:
+      Aggressive: true
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+      KnockBackImmune: true
 #  - Id: 20582
 #    AegisName: MD_MANHOLE4
-#  - Id: 20583
-#    AegisName: MD_C_WHITEKNIGHT_G
-#  - Id: 20584
-#    AegisName: MD_C_KHALITZBURG_G
-#  - Id: 20585
-#    AegisName: MD_C_RAY_ARCHER_G
+  - Id: 20583
+    AegisName: MD_C_WHITEKNIGHT_G
+    Name: Mutated White Knight
+    Level: 188
+    Hp: 2450483
+    Attack: 4734
+    Attack2: 5680
+    Defense: 802
+    MagicDefense: 77
+    Str: 291
+    Agi: 105
+    Vit: 128
+    Int: 100
+    Dex: 187
+    Luk: 57
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Undead
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 1500
+    AttackMotion: 500
+    DamageMotion: 468
+    Ai: 21
+  - Id: 20584
+    AegisName: MD_C_KHALITZBURG_G
+    Name: Mutated Khalitzburg
+    Level: 185
+    Hp: 2401358
+    Attack: 3711
+    Attack2: 4414
+    Defense: 671
+    MagicDefense: 85
+    Str: 251
+    Agi: 192
+    Vit: 95
+    Int: 121
+    Dex: 155
+    Luk: 52
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Undead
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 528
+    AttackMotion: 528
+    DamageMotion: 468
+    Ai: 05
+    Modes:
+      CastSensorChase: true
+      ChangeChase: true
+      ChangeTargetMelee: true
+  - Id: 20585
+    AegisName: MD_C_RAY_ARCHER_G
+    Name: Mutated Raydric Archer
+    Level: 184
+    Hp: 2355718
+    Attack: 5415
+    Attack2: 5530
+    Defense: 463
+    MagicDefense: 104
+    Str: 191
+    Agi: 193
+    Vit: 156
+    Int: 152
+    Dex: 347
+    Luk: 177
+    AttackRange: 9
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 1152
+    AttackMotion: 1152
+    DamageMotion: 480
+    Ai: 04
+    Modes:
+      CastSensorIdle: true
+      Detector: true
 #  - Id: 20586
 #    AegisName: NYA_BRZ
 #  - Id: 20587
@@ -95286,6 +96590,34 @@ Body:
       - Item: Jeweliant_Card
         Rate: 1
         StealProtected: true
+  - Id: 20599
+    AegisName: G_JEWELIANT
+    Name: Jewelry Ant
+    Level: 191
+    Hp: 2445656
+    Sp: 0
+    Attack: 2154
+    Attack2: 3544
+    Defense: 252
+    MagicDefense: 71
+    Str: 140
+    Agi: 122
+    Vit: 80
+    Int: 100
+    Dex: 274
+    Luk: 100
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Insect
+    Element: Neutral
+    ElementLevel: 4
+    WalkSpeed: 250
+    AttackDelay: 360
+    AttackMotion: 360
+    DamageMotion: 600
+    Ai: 04        
   - Id: 20600
     AegisName: JEWEL
     Name: Jewel
@@ -95515,8 +96847,8 @@ Body:
         Rate: 1500
       - Item: Rune_Of_Darkness
         Rate: 3000
-      - Item: Odin_itembox
-        Rate: 5
+#      - Item: Odin_itembox
+#        Rate: 5
       - Item: Stone_Of_Intelligence_
         Rate: 100
       - Item: Soft_Feather
@@ -99492,7 +100824,7 @@ Body:
     Drops:
       - Item: Fin
         Rate: 7000
-      - Item: aegis_25893
+      - Item: Deepsea_Fish_Tail
         Rate: 250
       - Item: Crystal_Arrow_Container
         Rate: 25
@@ -99554,7 +100886,7 @@ Body:
       - Item: ILL_Obeaune_Card
         Rate: 1
         StealProtected: true
-      - Item: aegis_25894
+      - Item: Rotten_Deepseafish
         Rate: 250
   - Id: 20803
     AegisName: ILL_DEVIACE
@@ -99596,7 +100928,7 @@ Body:
         Rate: 30
       - Item: Katar_Of_Cold_Icicle
         Rate: 3
-      - Item: aegis_25892
+      - Item: Abysmal_Clam
         Rate: 250
       - Item: ILL_Deviace_Card
         Rate: 1
@@ -99644,12 +100976,12 @@ Body:
         Rate: 3000
       - Item: E_Abyss1
         Rate: 30
-      - Item: aegis_25895
+      - Item: Deep_Sea_Starfish
         Rate: 250
       - Item: ILL_Marse_Card
         Rate: 1
         StealProtected: true
-      - Item: aegis_7324
+      - Item: IL_Kraken_Leg
         Rate: 5
   - Id: 20805
     AegisName: ILL_MERMAN
@@ -99685,7 +101017,7 @@ Body:
         Rate: 1300
       - Item: E_Abyss1
         Rate: 30
-      - Item: aegis_25896
+      - Item: Deep_Sea_Crab
         Rate: 250
       - Item: Crown_Of_Witch
         Rate: 5
@@ -99732,9 +101064,9 @@ Body:
         Rate: 5000
       - Item: Chinese_Ink
         Rate: 5000
-      - Item: aegis_25892
+      - Item: Abysmal_Clam
         Rate: 500
-      - Item: aegis_7324
+      - Item: IL_Kraken_Leg
         Rate: 15
       - Item: Old_Blue_Box
         Rate: 5
@@ -99786,7 +101118,7 @@ Body:
       - Item: ILL_Sword_Fish_Card
         Rate: 1
         StealProtected: true
-      - Item: aegis_25893
+      - Item: Deepsea_Fish_Tail
         Rate: 500
   - Id: 20808
     AegisName: ILL_STROUF
@@ -99832,7 +101164,7 @@ Body:
         Rate: 15
       - Item: Brionac
         Rate: 2
-      - Item: aegis_25895
+      - Item: Deep_Sea_Starfish
         Rate: 500
       - Item: ILL_Strouf_Card
         Rate: 1
@@ -99871,7 +101203,7 @@ Body:
         Rate: 5500
       - Item: Sharp_Scale
         Rate: 2000
-      - Item: aegis_25894
+      - Item: Rotten_Deepseafish
         Rate: 500
       - Item: Fin
         Rate: 500
@@ -99913,7 +101245,7 @@ Body:
       KnockBackImmune: true
       StatusImmune: true
     Drops:
-      - Item: aegis_25896
+      - Item: Deep_Sea_Crab
         Rate: 500
       - Item: Nipper
         Rate: 2500
@@ -99926,8 +101258,68 @@ Body:
       - Item: ILL_King_Dramoh_Card
         Rate: 1
         StealProtected: true
-#  - Id: 20811
-#    AegisName: ILL_KRAKEN
+  - Id: 20811
+    AegisName: ILL_KRAKEN
+    Name: Deep Sea Kraken
+    Level: 204
+    Hp: 14342360
+    BaseExp: 983332
+    JobExp: 961111
+    MvpExp: 491666
+    Attack: 11254
+    Attack2: 9710
+    Defense: 335
+    MagicDefense: 271
+    Str: 250
+    Agi: 166
+    Vit: 217
+    Int: 188
+    Dex: 274
+    Luk: 150
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Fish
+    Element: Water
+    ElementLevel: 4
+    WalkSpeed: 150
+    AttackDelay: 768
+    AttackMotion: 768
+    DamageMotion: 576
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Detector: true
+      KnockBackImmune: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Bs_Making_S
+        Rate: 5000
+      - Item: Old_Violet_Box
+        Rate: 2250
+      - Item: Old_Card_Album
+        Rate: 450
+    Drops:
+      - Item: Tentacle
+        Rate: 9000
+      - Item: Hunting_Spear
+        Rate: 1000
+      - Item: Cardo
+        Rate: 500
+      - Item: Ice_Falchon
+        Rate: 300
+      - Item: Water_Sprits_Armor_
+        Rate: 100
+      - Item: Treasure_Box
+        Rate: 5000
+      - Item: ILL_Kraken_Card
+        Rate: 1
+        StealProtected: true
+      - Item: IL_Kraken_Leg
+        Rate: 10000
 #  - Id: 20812
 #    AegisName: MD_EVENT_HEMEL
 #  - Id: 20813
@@ -102516,8 +103908,67 @@ Body:
         Rate: 200
       - Item: IL_Twins_Jaw
         Rate: 200
-#  - Id: 21395
-#    AegisName: ILL_MAYA
+  - Id: 21395
+    AegisName: ILL_MAYA
+    Name: Silent Maya
+    Level: 175
+    Hp: 13000000
+    BaseExp: 8928000
+    JobExp: 6696000
+    MvpExp: 8928000
+    Attack: 6755
+    Attack2: 12070
+    Defense: 283
+    MagicDefense: 80
+    Str: 188
+    Agi: 172
+    Vit: 176
+    Int: 275
+    Dex: 292
+    Luk: 76
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Insect
+    Element: Neutral
+    ElementLevel: 4
+    WalkSpeed: 100
+    AttackDelay: 564
+    AttackMotion: 500
+    DamageMotion: 480
+    DamageTaken: 50
+    Ai: 21
+    Class: Boss
+    Modes:
+      Detector: true
+      StatusImmune: true
+      Mvp: true
+    MvpDrops:
+      - Item: Old_Violet_Box
+        Rate: 2000
+      - Item: Crystal_Jewel
+        Rate: 2000
+      - Item: Bs_Making_S
+        Rate: 5000
+    Drops:
+      - Item: IL_Twins_Crown
+        Rate: 10000
+      - Item: aegis_300239
+        Rate: 1
+        StealProtected: true
+      - Item: Queen's_Hair_Ornament
+        Rate: 500
+      - Item: Mother's_Nightmare
+        Rate: 100
+      - Item: Safety_Ring
+        Rate: 200
+      - Item: Tiara
+        Rate: 200
+      - Item: Dea_Staff
+        Rate: 100
+      - Item: Armlet_Of_Obedience
+        Rate: 500
 #  - Id: 21396
 #    AegisName: SEASON_MOB_016
 #  - Id: 21397

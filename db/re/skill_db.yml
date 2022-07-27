@@ -36794,7 +36794,7 @@ Body:
     CastTime: 4000
     AfterCastActDelay: 500
     Duration1: 20000
-    Cooldown: 1000
+    Cooldown: 1500
     FixedCastTime: 1000
     Requires:
       SpCost:
@@ -44766,6 +44766,8 @@ Body:
       - Level: 10
         Area: 4
     CastCancel: true
+    CastTime: 1000
+    FixedCastTime: 500
     AfterCastActDelay: 150
     Cooldown: 700
     Requires:
@@ -47560,7 +47562,7 @@ Body:
         - Level: 10
           Amount: 16
       SpCost: 30
-    Status: Watk_Element
+    Status: Sub_Weaponproperty
   - Id: 8203
     Name: MS_BOWLINGBASH
     Description: Bowling_Bash

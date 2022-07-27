@@ -1230,6 +1230,8 @@ enum sc_type : int16 {
 	SC_S_MANAPOTION,
 	SC_M_DEFSCROLL,
 
+	SC_SUB_WEAPONPROPERTY,
+
 	SC_RUSH_QUAKE1,
 	SC_RUSH_QUAKE2,
 	// 2021 Mutated Homunculus Skills
